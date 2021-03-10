@@ -1,0 +1,66 @@
+body div#frame, div.section.start h1 {
+    opacity:1;
+}
+a#logo, img.logo {
+    top:0px;
+}
+
+html, body, div#frame {
+    height:100%;
+    min-height:580px;
+}
+div.section.start {
+    height:100%;
+    min-height:580px;
+}
+div.page.url {
+    height:800px;
+    background-image:url(../img/bg_shine.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+div.section.contact, div.section.footer {
+    min-height:100%;
+}
+div.page {
+    position:relative;
+    top:0px;
+    left:0px;
+    margin:0px;
+}
+div.page img.background {
+    display:none;
+}
+div.page img.noscript {
+    display:block;
+    position:relative;
+    left:0px;
+    top:0px;
+    width:100%;
+}
+div.pages div.page {
+    cursor: default;
+}
+div.page.url a {
+    cursor:pointer;
+    text-indent:0;
+    opacity:1;
+    white-space: normal;
+}
+div.page.url a:after {
+    display:none;
+}
+div.page > h2, div.page div.description {
+    bottom:30%;
+}
+div#frame {
+    overflow:visible;
+}
+
+div.section.imprint {
+    display:block;
+}
+div.section.loading {
+    display:none;
+}
