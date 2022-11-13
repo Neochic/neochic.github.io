@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}.call-to-action{display:inline-block;background:var(--neo-yellow) 0 0 no-repeat padding-box;color:var(--neo-black);font:normal normal 700 calc(1.2vw + 10px)/calc(1.4vw + 16px) Poppins;padding:10px 20px;text-decoration:none;white-space:nowrap;align-self:center;transition:color .3s}@media only screen and (min-width: 600px){.call-to-action{font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins}}@media only screen and (min-width: 1920px){.call-to-action{font:normal normal 700 35px/44px Poppins}}.call-to-action:hover{color:#fff}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.image-header{box-sizing:border-box;position:relative;display:flex;flex-direction:column;width:100%;min-height:100vh;padding-bottom:10vw}.image-header .image-header-background{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}.image-header .image-header-background img{width:100%;height:100%;object-fit:cover}.image-header .main-header{position:relative;z-index:2}.image-header .page-title{flex:1}.image-header .call-to-action{position:relative;z-index:1;align-self:center}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
+</head>
+<body id="start">
+    <a href="kontakt.html" class="contact-sticky">
+    Kontakt
+</a>
+
+<div class="main-content">
+        <section class="image-header neo-section">
+            <picture class="image-header-background">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/christoph-stickel-und-oemer-almali-am-pc.avif 1440w,
+                            /assets/header/195-9/1170/christoph-stickel-und-oemer-almali-am-pc.avif 1170w,
+                            /assets/header/195-9/828/christoph-stickel-und-oemer-almali-am-pc.avif 828w,
+                            /assets/header/195-9/750/christoph-stickel-und-oemer-almali-am-pc.avif 750w,
+                            /assets/header/195-9/640/christoph-stickel-und-oemer-almali-am-pc.avif 640w
+                        "
+                        sizes="100vw">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/christoph-stickel-und-oemer-almali-am-pc.webp 1440w,
+                            /assets/header/195-9/1170/christoph-stickel-und-oemer-almali-am-pc.webp 1170w,
+                            /assets/header/195-9/828/christoph-stickel-und-oemer-almali-am-pc.webp 828w,
+                            /assets/header/195-9/750/christoph-stickel-und-oemer-almali-am-pc.webp 750w,
+                            /assets/header/195-9/640/christoph-stickel-und-oemer-almali-am-pc.webp 640w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/christoph-stickel-und-oemer-almali-am-pc.avif 3840w,
+                            /assets/header/3-2/3456/christoph-stickel-und-oemer-almali-am-pc.avif 3456w,
+                            /assets/header/3-2/2880/christoph-stickel-und-oemer-almali-am-pc.avif 2880w,
+                            /assets/header/3-2/2560/christoph-stickel-und-oemer-almali-am-pc.avif 2560w,
+                            /assets/header/3-2/1920/christoph-stickel-und-oemer-almali-am-pc.avif 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/christoph-stickel-und-oemer-almali-am-pc.webp 3840w,
+                            /assets/header/3-2/3456/christoph-stickel-und-oemer-almali-am-pc.webp 3456w,
+                            /assets/header/3-2/2880/christoph-stickel-und-oemer-almali-am-pc.webp 2880w,
+                            /assets/header/3-2/2560/christoph-stickel-und-oemer-almali-am-pc.webp 2560w,
+                            /assets/header/3-2/1920/christoph-stickel-und-oemer-almali-am-pc.webp 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/christoph-stickel-und-oemer-almali-am-pc.avif 5120w,
+                            /assets/header/16-9/3840/christoph-stickel-und-oemer-almali-am-pc.avif 3840w,
+                            /assets/header/16-9/3456/christoph-stickel-und-oemer-almali-am-pc.avif 3456w,
+                            /assets/header/16-9/2560/christoph-stickel-und-oemer-almali-am-pc.avif 2560w,
+                            /assets/header/16-9/1920/christoph-stickel-und-oemer-almali-am-pc.avif 1920w,
+                            /assets/header/16-9/1280/christoph-stickel-und-oemer-almali-am-pc.avif 1280w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/christoph-stickel-und-oemer-almali-am-pc.webp 5120w,
+                            /assets/header/16-9/3840/christoph-stickel-und-oemer-almali-am-pc.webp 3840w,
+                            /assets/header/16-9/3456/christoph-stickel-und-oemer-almali-am-pc.webp 3456w,
+                            /assets/header/16-9/2560/christoph-stickel-und-oemer-almali-am-pc.webp 2560w,
+                            /assets/header/16-9/1920/christoph-stickel-und-oemer-almali-am-pc.webp 1920w,
+                            /assets/header/16-9/1280/christoph-stickel-und-oemer-almali-am-pc.webp 1280w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/christoph-stickel-und-oemer-almali-am-pc.avif 5120w,
+                            /assets/header/21-9/3840/christoph-stickel-und-oemer-almali-am-pc.avif 3840w,
+                            /assets/header/21-9/2560/christoph-stickel-und-oemer-almali-am-pc.avif 2560w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/christoph-stickel-und-oemer-almali-am-pc.webp 5120w,
+                            /assets/header/21-9/3840/christoph-stickel-und-oemer-almali-am-pc.webp 3840w,
+                            /assets/header/21-9/2560/christoph-stickel-und-oemer-almali-am-pc.webp 2560w
+                        "
+                        sizes="100vw">
+                <img src="/assets/header/16-9/1920/christoph-stickel-und-oemer-almali-am-pc.webp" alt="christoph-stickel-und-oemer-almali-am-pc" loading="eager">
+            </picture>
+        <div class="main-header">
+        <a href="/"><img class="company-icon inverted"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle inverted" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link active" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
+    </div>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="inverted">
+                Wir bieten dir neue Herausforderungen.      </h1>
+        
+                </div>
+        
+            </div>
+        </div>
+        <a href="#offene-stellen" class="call-to-action ">
+            >> Offene Stellen
+        </a>
+    </section>
+    
+    <section class="content-section">
+        <div class="texty-content add-scroll-margin" id="ein-einzigartiges-team">
+            <div class="yellowy-headline
+                        
+                        
+                        underline">
+                <h2 class=" no-wrap">
+                          <span>
+                              Arbeite in einem
+                          </span>
+                          <span>
+                            einzigartigen Team
+                          </span>
+                </h2>
+            </div>
+          <div class="texty-wrapper">
+            <div class="texty-content-item">
+                    <h3 class="">
+                Unsere Vision  </h3>
+            
+                          <p>
+                              Wir wollen für jeden Mitarbeiter, dass die Arbeit nicht als lästige
+                              Notwendigkeit gesehen wird. Jeder von uns findet Erfüllung darin, gute
+                              Produkte zu entwickeln und dabei kreative und technisch raffinierte
+                              Lösungen zu erarbeiten. Noch schöner ist es, die Erfahrung mit einem
+                              motivierten und hoch qualifizierten Team in entspannter Atmosphäre
+                              zu teilen.
+                          </p>
+                            <h3 class="">
+                  Was dich erwartet  </h3>
+              
+                          <p>
+                              Unsere Ausrichtung auf Nachhaltigkeit findet sich in jedem Aspekt wieder.
+                              Dazu gehört für uns auch, dass wir und unsere Mitarbeiter glücklich und
+                              gesund bleiben. Daher ermöglichen wir einen Life-Style mit einer ausgewogenen
+                              Work-Life-Balance und weiteren Vorzügen. Wir achten darauf, dass wir uns in
+                              den Projekten nicht verlieren und Spaß haben.<br />
+                              Wir glauben fest daran, dass davon das gesamte Unternehmen mit seinen
+                              Mitarbeitern sowie auch unsere Kunden profitieren.
+                          </p>
+            </div>
+            <div class="texty-content-item">
+                    <h3 class="">
+                Deine Benefits  </h3>
+            
+                          <p>Dies sind die aktuellen Leistungen, welche wir anbieten. Aber wir probieren immer
+                              wieder neue Leistungen aus und können gerne auf deine persönlichen Wünsche eingehen.</p>
+                          <ul>
+                              <li>Flexible Arbeitszeiten</li>
+                              <li>Flexibler Arbeitsort - Homeoffice, Unterwegs oder im Büro</li>
+                              <li>Nachhaltige Mobilität - Bahn, E-Bike, E-Auto</li>
+                              <li>Kostenloses E-Auto-Laden im Büro</li>
+                              <li>Gutes Gehalt und Boni</li>
+                              <li>Gemeinsames Mittagessen an Bürotagen</li>
+                              <li>Zuschüsse zu Sport - EMS oder Fitnessstudio</li>
+                              <li>Italienischer Qualitätskaffee</li>
+                              <li>Kostenlose Getränke und Snacks im Büro</li>
+                          </ul>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="content-section dark remove-padding-top">
+        <div class="intro ">
+          <div class="intro-header">
+            <picture class="image">
+                <source srcset="
+                                /assets/intro/3640/christoph-und-philipp-stickel-auf-dem-sofa.avif 3640w,
+                                /assets/intro/2730/christoph-und-philipp-stickel-auf-dem-sofa.avif 2730w,
+                                /assets/intro/2360/christoph-und-philipp-stickel-auf-dem-sofa.avif 2360w,
+                                /assets/intro/1820/christoph-und-philipp-stickel-auf-dem-sofa.avif 1820w,
+                                /assets/intro/1536/christoph-und-philipp-stickel-auf-dem-sofa.avif 1536w,
+                                /assets/intro/1180/christoph-und-philipp-stickel-auf-dem-sofa.avif 1180w,
+                                /assets/intro/1024/christoph-und-philipp-stickel-auf-dem-sofa.avif 1024w,
+                                /assets/intro/960/christoph-und-philipp-stickel-auf-dem-sofa.avif 960w,
+                                /assets/intro/750/christoph-und-philipp-stickel-auf-dem-sofa.avif 750w,
+                                /assets/intro/640/christoph-und-philipp-stickel-auf-dem-sofa.avif 640w,
+                                /assets/intro/320/christoph-und-philipp-stickel-auf-dem-sofa.avif 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <source srcset="
+                                /assets/intro/3640/christoph-und-philipp-stickel-auf-dem-sofa.webp 3640w,
+                                /assets/intro/2730/christoph-und-philipp-stickel-auf-dem-sofa.webp 2730w,
+                                /assets/intro/2360/christoph-und-philipp-stickel-auf-dem-sofa.webp 2360w,
+                                /assets/intro/1820/christoph-und-philipp-stickel-auf-dem-sofa.webp 1820w,
+                                /assets/intro/1536/christoph-und-philipp-stickel-auf-dem-sofa.webp 1536w,
+                                /assets/intro/1180/christoph-und-philipp-stickel-auf-dem-sofa.webp 1180w,
+                                /assets/intro/1024/christoph-und-philipp-stickel-auf-dem-sofa.webp 1024w,
+                                /assets/intro/960/christoph-und-philipp-stickel-auf-dem-sofa.webp 960w,
+                                /assets/intro/750/christoph-und-philipp-stickel-auf-dem-sofa.webp 750w,
+                                /assets/intro/640/christoph-und-philipp-stickel-auf-dem-sofa.webp 640w,
+                                /assets/intro/320/christoph-und-philipp-stickel-auf-dem-sofa.webp 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <img src="assets/intro/1820/christoph-und-philipp-stickel-auf-dem-sofa.webp"
+                     alt="christoph-und-philipp-stickel-auf-dem-sofa" loading="lazy">
+            </picture>
+        
+          </div>
+          <div class="intro-content">
+                  <div class="jobs" id="offene-stellen">
+            <div class="narrow-wrapper">
+                        <div class="yellowy-headline
+                                    
+                                    
+                                    underline">
+                            <h2 class="inverted no-wrap">
+                                      <span>
+                                      </span>
+                                      <span>
+                                        Wir suchen
+                                      </span>
+                            </h2>
+                        </div>
+                        <p class="jobs-intro">
+                            Bist du enthusiastisch und willst wirklich etwas bewegen? Dann bist du vielleicht bei uns genau
+                            richtig. Wir haben eine flache Hierarchie und legen großen Wert darauf, dass wir bei unseren
+                            Kunden die Möglichkeit haben mit ihnen das beste Produkt zu bauen. Dabei glauben wir,
+                            dass das nur gelingt, wenn die beste Idee gewinnt und nicht die höchste Position.
+                        </p>
+                        <ul>
+                            <li>
+                                <a href="junior-full-stack-developer.html">
+                                    <h3>Junior Full Stack Developer (m/w/d)</h3>
+                                    <p>
+                                        Wir suchen einen Junior Developer, der sowohl an cloudbasierter Infrastruktur,
+                                        Backend Entwicklung als auch Frontend Entwicklung interessiert ist.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="senior-full-stack-developer.html">
+                                    <h3>Senior Full Stack Developer (m/w/d)</h3>
+                                    <p>
+                                        Wir suchen einen Senior Entwickler, der sich mindestens in zwei der drei Bereiche
+                                        cloudbasierter Infrastruktur, Backend Entwicklung und Frontend Entwicklung auskennt.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="senior-cloud-architekt.html">
+                                    <h3>Senior Cloud Architekt (m/w/d)</h3>
+                                    <p>
+                                        Wir suchen einen Senior Cloud Architekt, der Erfahrung mit den üblichen
+                                        Cloudhosting-Anbietern, Kubernetes und Infrastructure as Code mitbringt.
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="agile-coach.html">
+                                    <h3>Agile-Coach (m/w/d)</h3>
+                                    <p>
+                                        Wir suchen einen Agile-Coach, der sowohl Erfahrung in verschiedenen
+                                        agilen Rollen sammeln konnte, als auch schon agile Change-Prozesse
+                                        in Unternehmen begleitet hat.
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+    </section>
+    
+    <section class="content-section narrow" id="kultur-bei-neochic">
+            <div class="image-with-text">
+              <div class="left">
+                  <picture class="content-image">
+                      <source srcset="
+                                          /assets/content/1950/gesundes-essen-in-der-mittagspause.avif 1950w,
+                                          /assets/content/1930/gesundes-essen-in-der-mittagspause.avif 1930w,
+                                          /assets/content/1734/gesundes-essen-in-der-mittagspause.avif 1734w,
+                                          /assets/content/1300/gesundes-essen-in-der-mittagspause.avif 1300w,
+                                          /assets/content/965/gesundes-essen-in-der-mittagspause.avif 965w,
+                                          /assets/content/867/gesundes-essen-in-der-mittagspause.avif 867w,
+                                          /assets/content/700/gesundes-essen-in-der-mittagspause.avif 700w,
+                                          /assets/content/650/gesundes-essen-in-der-mittagspause.avif 650w,
+                                          /assets/content/560/gesundes-essen-in-der-mittagspause.avif 560w,
+                                          /assets/content/440/gesundes-essen-in-der-mittagspause.avif 440w,
+                                          /assets/content/350/gesundes-essen-in-der-mittagspause.avif 350w,
+                                          /assets/content/335/gesundes-essen-in-der-mittagspause.avif 335w,
+                                          /assets/content/280/gesundes-essen-in-der-mittagspause.avif 280w
+                                      "
+                                  sizes="(min-width: 1450px) 867px, (min-width: 1100px) calc((100vw - 150px) / 3 * 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                  >
+                      <source srcset="
+                                          /assets/content/1950/gesundes-essen-in-der-mittagspause.webp 1950w,
+                                          /assets/content/1930/gesundes-essen-in-der-mittagspause.webp 1930w,
+                                          /assets/content/1734/gesundes-essen-in-der-mittagspause.webp 1734w,
+                                          /assets/content/1300/gesundes-essen-in-der-mittagspause.webp 1300w,
+                                          /assets/content/965/gesundes-essen-in-der-mittagspause.webp 965w,
+                                          /assets/content/867/gesundes-essen-in-der-mittagspause.webp 867w,
+                                          /assets/content/700/gesundes-essen-in-der-mittagspause.webp 700w,
+                                          /assets/content/650/gesundes-essen-in-der-mittagspause.webp 650w,
+                                          /assets/content/560/gesundes-essen-in-der-mittagspause.webp 560w,
+                                          /assets/content/440/gesundes-essen-in-der-mittagspause.webp 440w,
+                                          /assets/content/350/gesundes-essen-in-der-mittagspause.webp 350w,
+                                          /assets/content/335/gesundes-essen-in-der-mittagspause.webp 335w,
+                                          /assets/content/280/gesundes-essen-in-der-mittagspause.webp 280w
+                                      "
+                              sizes="(min-width: 1450px) 867px, (min-width: 1100px) calc((100vw - 150px) / 3 * 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                  >
+                          <img src="assets/content/867/gesundes-essen-in-der-mittagspause.webp"
+                           alt="gesundes-essen-in-der-mittagspause" loading="lazy"
+                          
+                          
+                          >
+                  </picture>
+              </div>
+              <div class="right">
+                  <div class="yellowy-headline
+                              
+                              
+                              underline">
+                      <h2 class=" no-wrap">
+                                <span>
+                                    Kultur bei
+                                </span>
+                                <span>
+                                  Neochic
+                                </span>
+                      </h2>
+                  </div>
+                        <p>
+                            Es gibt viele Unterschiede zwischen uns und anderen großen Softwareberatungsunternehmen.
+                            Hier sind wir alle Teil eines Teams, das eng miteinander verbunden ist und sich umeinander kümmert.
+                            Wir stellen sicher, dass jeder von uns Spaß an der Arbeit hat, während wir jeden unabhängig von
+                            seinen unterschiedlichen Hintergründen, Erfahrungen usw. willkommen heißen.</p>
+              </div>
+        </div>
+    </section>
+    <section class="content-section narrow">
+        <div class="dual-image">
+            <div class="left">
+                      <p>
+                          Wir kümmern uns um nachhaltige Softwareentwicklung, aber noch mehr um eine nachhaltige Welt.
+                          Wir legen großen Wert auf Elektromobilität, Bio-Lebensmittel und Vermeidung von Abfall.
+                          Wir bieten Mobilitätslösungen an, je nach Situation entweder ein E-Bike oder ein Elektroauto.
+                      </p>
+                      <p>
+                          Neben einer entspannten Atmosphäre beim Arbeiten ist uns auch wichtig auf Teamevents
+                          gemeinsam Spaß zu haben. Dafür werfen wir gerne mal abends auf der Terrasse noch
+                          den Grill an oder lassen den Freitag mit einem Cocktail ausklingen. Zudem machen wir
+                          gemeinsam Sport oder gehen nach der Arbeit noch gemeinsam in die Stadt. Natürlich
+                          beziehen wir dabei nicht nur unsere Mitarbeiter, sondern auch deren Familien mit ein.<br />
+                          Das auch gerne in der Mittagspause mit selbst gekochtem gesunden Essen.
+                      </p>
+                <picture class="content-image">
+                    <source srcset="
+                                        /assets/content/1950/elektroauto-an-ladestation.avif 1950w,
+                                        /assets/content/1930/elektroauto-an-ladestation.avif 1930w,
+                                        /assets/content/1734/elektroauto-an-ladestation.avif 1734w,
+                                        /assets/content/1300/elektroauto-an-ladestation.avif 1300w,
+                                        /assets/content/965/elektroauto-an-ladestation.avif 965w,
+                                        /assets/content/867/elektroauto-an-ladestation.avif 867w,
+                                        /assets/content/700/elektroauto-an-ladestation.avif 700w,
+                                        /assets/content/650/elektroauto-an-ladestation.avif 650w,
+                                        /assets/content/560/elektroauto-an-ladestation.avif 560w,
+                                        /assets/content/440/elektroauto-an-ladestation.avif 440w,
+                                        /assets/content/350/elektroauto-an-ladestation.avif 350w,
+                                        /assets/content/335/elektroauto-an-ladestation.avif 335w,
+                                        /assets/content/280/elektroauto-an-ladestation.avif 280w
+                                    "
+                                sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                            >
+                    <source srcset="
+                                        /assets/content/1950/elektroauto-an-ladestation.webp 1950w,
+                                        /assets/content/1930/elektroauto-an-ladestation.webp 1930w,
+                                        /assets/content/1734/elektroauto-an-ladestation.webp 1734w,
+                                        /assets/content/1300/elektroauto-an-ladestation.webp 1300w,
+                                        /assets/content/965/elektroauto-an-ladestation.webp 965w,
+                                        /assets/content/867/elektroauto-an-ladestation.webp 867w,
+                                        /assets/content/700/elektroauto-an-ladestation.webp 700w,
+                                        /assets/content/650/elektroauto-an-ladestation.webp 650w,
+                                        /assets/content/560/elektroauto-an-ladestation.webp 560w,
+                                        /assets/content/440/elektroauto-an-ladestation.webp 440w,
+                                        /assets/content/350/elektroauto-an-ladestation.webp 350w,
+                                        /assets/content/335/elektroauto-an-ladestation.webp 335w,
+                                        /assets/content/280/elektroauto-an-ladestation.webp 280w
+                                    "
+                            sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                        >
+                        <img src="assets/content/650/elektroauto-an-ladestation.webp"
+                         alt="elektroauto-an-ladestation" loading="lazy"
+                        
+                        
+                        >
+                </picture>
+            </div>
+            <div class="right">
+                <picture class="content-image">
+                    <source srcset="
+                                        /assets/content/1950/selbstanbau-von-frischem-gemuese.avif 1950w,
+                                        /assets/content/1930/selbstanbau-von-frischem-gemuese.avif 1930w,
+                                        /assets/content/1734/selbstanbau-von-frischem-gemuese.avif 1734w,
+                                        /assets/content/1300/selbstanbau-von-frischem-gemuese.avif 1300w,
+                                        /assets/content/965/selbstanbau-von-frischem-gemuese.avif 965w,
+                                        /assets/content/867/selbstanbau-von-frischem-gemuese.avif 867w,
+                                        /assets/content/700/selbstanbau-von-frischem-gemuese.avif 700w,
+                                        /assets/content/650/selbstanbau-von-frischem-gemuese.avif 650w,
+                                        /assets/content/560/selbstanbau-von-frischem-gemuese.avif 560w,
+                                        /assets/content/440/selbstanbau-von-frischem-gemuese.avif 440w,
+                                        /assets/content/350/selbstanbau-von-frischem-gemuese.avif 350w,
+                                        /assets/content/335/selbstanbau-von-frischem-gemuese.avif 335w,
+                                        /assets/content/280/selbstanbau-von-frischem-gemuese.avif 280w
+                                    "
+                                sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                            >
+                    <source srcset="
+                                        /assets/content/1950/selbstanbau-von-frischem-gemuese.webp 1950w,
+                                        /assets/content/1930/selbstanbau-von-frischem-gemuese.webp 1930w,
+                                        /assets/content/1734/selbstanbau-von-frischem-gemuese.webp 1734w,
+                                        /assets/content/1300/selbstanbau-von-frischem-gemuese.webp 1300w,
+                                        /assets/content/965/selbstanbau-von-frischem-gemuese.webp 965w,
+                                        /assets/content/867/selbstanbau-von-frischem-gemuese.webp 867w,
+                                        /assets/content/700/selbstanbau-von-frischem-gemuese.webp 700w,
+                                        /assets/content/650/selbstanbau-von-frischem-gemuese.webp 650w,
+                                        /assets/content/560/selbstanbau-von-frischem-gemuese.webp 560w,
+                                        /assets/content/440/selbstanbau-von-frischem-gemuese.webp 440w,
+                                        /assets/content/350/selbstanbau-von-frischem-gemuese.webp 350w,
+                                        /assets/content/335/selbstanbau-von-frischem-gemuese.webp 335w,
+                                        /assets/content/280/selbstanbau-von-frischem-gemuese.webp 280w
+                                    "
+                            sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                        >
+                        <img src="assets/content/650/selbstanbau-von-frischem-gemuese.webp"
+                         alt="selbstanbau-von-frischem-gemuese" loading="lazy"
+                        
+                        
+                        >
+                </picture>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>

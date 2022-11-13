@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}.call-to-action{display:inline-block;background:var(--neo-yellow) 0 0 no-repeat padding-box;color:var(--neo-black);font:normal normal 700 calc(1.2vw + 10px)/calc(1.4vw + 16px) Poppins;padding:10px 20px;text-decoration:none;white-space:nowrap;align-self:center;transition:color .3s}@media only screen and (min-width: 600px){.call-to-action{font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins}}@media only screen and (min-width: 1920px){.call-to-action{font:normal normal 700 35px/44px Poppins}}.call-to-action:hover{color:#fff}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.image-header{box-sizing:border-box;position:relative;display:flex;flex-direction:column;width:100%;min-height:100vh;padding-bottom:10vw}.image-header .image-header-background{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}.image-header .image-header-background img{width:100%;height:100%;object-fit:cover}.image-header .main-header{position:relative;z-index:2}.image-header .page-title{flex:1}.image-header .call-to-action{position:relative;z-index:1;align-self:center}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
+</head>
+<body id="start">
+    <a href="kontakt.html" class="contact-sticky">
+    Kontakt
+</a>
+
+<div class="main-content">
+      <section class="image-header neo-section">
+            <picture class="image-header-background">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/feierabend-auf-der-terasse.avif 1440w,
+                            /assets/header/195-9/1170/feierabend-auf-der-terasse.avif 1170w,
+                            /assets/header/195-9/828/feierabend-auf-der-terasse.avif 828w,
+                            /assets/header/195-9/750/feierabend-auf-der-terasse.avif 750w,
+                            /assets/header/195-9/640/feierabend-auf-der-terasse.avif 640w
+                        "
+                        sizes="100vw">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/feierabend-auf-der-terasse.webp 1440w,
+                            /assets/header/195-9/1170/feierabend-auf-der-terasse.webp 1170w,
+                            /assets/header/195-9/828/feierabend-auf-der-terasse.webp 828w,
+                            /assets/header/195-9/750/feierabend-auf-der-terasse.webp 750w,
+                            /assets/header/195-9/640/feierabend-auf-der-terasse.webp 640w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/feierabend-auf-der-terasse.avif 3840w,
+                            /assets/header/3-2/3456/feierabend-auf-der-terasse.avif 3456w,
+                            /assets/header/3-2/2880/feierabend-auf-der-terasse.avif 2880w,
+                            /assets/header/3-2/2560/feierabend-auf-der-terasse.avif 2560w,
+                            /assets/header/3-2/1920/feierabend-auf-der-terasse.avif 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/feierabend-auf-der-terasse.webp 3840w,
+                            /assets/header/3-2/3456/feierabend-auf-der-terasse.webp 3456w,
+                            /assets/header/3-2/2880/feierabend-auf-der-terasse.webp 2880w,
+                            /assets/header/3-2/2560/feierabend-auf-der-terasse.webp 2560w,
+                            /assets/header/3-2/1920/feierabend-auf-der-terasse.webp 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/feierabend-auf-der-terasse.avif 5120w,
+                            /assets/header/16-9/3840/feierabend-auf-der-terasse.avif 3840w,
+                            /assets/header/16-9/3456/feierabend-auf-der-terasse.avif 3456w,
+                            /assets/header/16-9/2560/feierabend-auf-der-terasse.avif 2560w,
+                            /assets/header/16-9/1920/feierabend-auf-der-terasse.avif 1920w,
+                            /assets/header/16-9/1280/feierabend-auf-der-terasse.avif 1280w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/feierabend-auf-der-terasse.webp 5120w,
+                            /assets/header/16-9/3840/feierabend-auf-der-terasse.webp 3840w,
+                            /assets/header/16-9/3456/feierabend-auf-der-terasse.webp 3456w,
+                            /assets/header/16-9/2560/feierabend-auf-der-terasse.webp 2560w,
+                            /assets/header/16-9/1920/feierabend-auf-der-terasse.webp 1920w,
+                            /assets/header/16-9/1280/feierabend-auf-der-terasse.webp 1280w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/feierabend-auf-der-terasse.avif 5120w,
+                            /assets/header/21-9/3840/feierabend-auf-der-terasse.avif 3840w,
+                            /assets/header/21-9/2560/feierabend-auf-der-terasse.avif 2560w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/feierabend-auf-der-terasse.webp 5120w,
+                            /assets/header/21-9/3840/feierabend-auf-der-terasse.webp 3840w,
+                            /assets/header/21-9/2560/feierabend-auf-der-terasse.webp 2560w
+                        "
+                        sizes="100vw">
+                <img src="/assets/header/16-9/1920/feierabend-auf-der-terasse.webp" alt="feierabend-auf-der-terasse" loading="eager">
+            </picture>
+        <div class="main-header">
+        <a href="/"><img class="company-icon inverted"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle inverted" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link active" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
+    </div>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="inverted">
+                Gemeinsam finden wir die beste Lösung.      </h1>
+        
+                </div>
+        
+            </div>
+        </div>
+        <a href="#arbeitsweise" class="call-to-action ">
+            >> Unsere Arbeitsweise
+        </a>
+    </section>
+    
+    <section class="content-section narrow" id="arbeitsweise">
+            <div class="picturey-content">
+                <div class="picturey-content-items">
+                    <div class="picturey-content-text-item">
+                        <div class="yellowy-headline
+                                    
+                                    
+                                    underline">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          So erzielen wir die
+                                      </span>
+                                      <span>
+                                        besten Ergebnisse
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description">
+                                       <p>
+                                           In Softwareprojekten können jederzeit unerwartete Anforderungen auftauchen oder dass
+                                           stabile Anwendungen ausfallen.<br />
+                                           Daher sind wir auf agile Softwareentwicklung spezialisiert und bringen unsere Erfahrung in
+                                           Continuous Delivery (CD), Testautomatisierung und Extreme Programming mit.
+                                       </p>
+                                       <p>
+                                           Mit unserer jahrelangen Erfahrung sind wir davon überzeugt, dass wir mit unserem
+                                           funktionsübergreifenden Team jede Anforderungen eines modernen IT-Projekts abdecken können.
+                                           So können wir Sie dabei unterstützen Ihren Tech-Stack zu aktualisieren oder ihre Infrastruktur
+                                           in die Cloud zu migrieren, oder einfach nur schnell ein neues Produkt mit hoher Qualität
+                                           auf den Markt zu bringen. <br />
+                                           Dabei versuchen wir stets darauf zu achten, dass wir unser Wissen an Sie weitergeben und
+                                           bestehende Wissens-Silos aufbrechen. Weitere Details finden Sie unter Leistungen.
+                                       </p>
+                        </div>
+                    </div>
+                    <div class="picturey-content-image-item">
+                        <picture class="content-image">
+                            <source srcset="
+                                                /assets/content/1950/nachhaltige-softwareentwicklung.avif 1950w,
+                                                /assets/content/1930/nachhaltige-softwareentwicklung.avif 1930w,
+                                                /assets/content/1734/nachhaltige-softwareentwicklung.avif 1734w,
+                                                /assets/content/1300/nachhaltige-softwareentwicklung.avif 1300w,
+                                                /assets/content/965/nachhaltige-softwareentwicklung.avif 965w,
+                                                /assets/content/867/nachhaltige-softwareentwicklung.avif 867w,
+                                                /assets/content/700/nachhaltige-softwareentwicklung.avif 700w,
+                                                /assets/content/650/nachhaltige-softwareentwicklung.avif 650w,
+                                                /assets/content/560/nachhaltige-softwareentwicklung.avif 560w,
+                                                /assets/content/440/nachhaltige-softwareentwicklung.avif 440w,
+                                                /assets/content/350/nachhaltige-softwareentwicklung.avif 350w,
+                                                /assets/content/335/nachhaltige-softwareentwicklung.avif 335w,
+                                                /assets/content/280/nachhaltige-softwareentwicklung.avif 280w
+                                            "
+                                        sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                    >
+                            <source srcset="
+                                                /assets/content/1950/nachhaltige-softwareentwicklung.webp 1950w,
+                                                /assets/content/1930/nachhaltige-softwareentwicklung.webp 1930w,
+                                                /assets/content/1734/nachhaltige-softwareentwicklung.webp 1734w,
+                                                /assets/content/1300/nachhaltige-softwareentwicklung.webp 1300w,
+                                                /assets/content/965/nachhaltige-softwareentwicklung.webp 965w,
+                                                /assets/content/867/nachhaltige-softwareentwicklung.webp 867w,
+                                                /assets/content/700/nachhaltige-softwareentwicklung.webp 700w,
+                                                /assets/content/650/nachhaltige-softwareentwicklung.webp 650w,
+                                                /assets/content/560/nachhaltige-softwareentwicklung.webp 560w,
+                                                /assets/content/440/nachhaltige-softwareentwicklung.webp 440w,
+                                                /assets/content/350/nachhaltige-softwareentwicklung.webp 350w,
+                                                /assets/content/335/nachhaltige-softwareentwicklung.webp 335w,
+                                                /assets/content/280/nachhaltige-softwareentwicklung.webp 280w
+                                            "
+                                    sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                >
+                                <img src="assets/content/650/nachhaltige-softwareentwicklung.webp"
+                                 alt="nachhaltige-softwareentwicklung" loading="lazy"
+                                
+                                
+                                >
+                        </picture>
+                        <div class="yellowy-headline
+                                    pull-above
+                                    pull-right
+                                    ">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          Nachhaltig im
+                                      </span>
+                                      <span>
+                                        ganzen Prozess.
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description pull-right">
+                                        <p>
+                                            Genauso wie wir uns um nachhaltige Softwareentwicklung kümmern, setzen wir uns auch für eine nachhaltige Welt
+                                            ein. Wir legen großen Wert darauf das Arbeitsumfeld ökologisch und gesund zu gestalten. Mit einer
+                                            angenehmen Arbeitsatmosphäre, gemeinsamen Mahlzeiten und Teamaktivitäten reduzieren wir
+                                            den Stress im Arbeitsalltag. Dabei achten wir auf selbst angebaute oder Bio-Lebensmittel und die
+                                            Vermeidung von Abfall. Ebenso versuchen wir den CO2 Fußabdruck bei der Energie gering zu halten.
+                                            So setzen wir für die Mobilität aller Angestellten schon heute voll auf Elektroautos und E-Bikes.
+                                        </p>
+                            <div class="call-to-action-wrapper">
+                                <a href="karriere.html#kultur-bei-neochic" class="call-to-action ">
+                                    >> Unsere Kultur
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="content-section dark remove-padding-top">
+        <div class="intro ">
+          <div class="intro-header">
+            <picture class="image">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.avif 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <img src="assets/intro/1820/christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur.webp"
+                     alt="christoph-stickel-und-oemer-almali-diskutieren-ueber-infrastruktur" loading="lazy">
+            </picture>
+        
+          </div>
+          <div class="intro-content">
+            <div class="texty-content add-scroll-margin" id="unsere-geschichte">
+                <div class="yellowy-headline
+                            
+                            
+                            underline">
+                    <h2 class="inverted no-wrap">
+                              <span>
+                                  Wir haben eine
+                              </span>
+                              <span>
+                                Geschichte
+                              </span>
+                    </h2>
+                </div>
+              <div class="texty-wrapper">
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Wo kommen wir her  </h3>
+                
+                                  <p>
+                                      Das Unternehmen Neochic wurde vor 10 Jahren gegründet. Dabei lag der Fokus anfangs
+                                      auf Corporate Websites, Fotografie und Marketing. Schon zu dieser Zeit haben wir
+                                      großen Wert auf eine hochwertige technische Umsetzung gelegt.<br />
+                                      Mit der Zeit nahm der Anteil der Softwareentwicklung für Webapplikationen immer
+                                      weiter zu, bis wir uns letztendlich vollständig darauf spezialisiert haben. Dennoch ist
+                                      das Verständnis für Businessanforderungen, User Experience und Design tief
+                                      in der DNA des Unternehmens verwurzelt. Das hilft uns dabei in der Kommunikation
+                                      zwischen Business, UX-Designern und Entwicklern zu vermitteln.
+                                  </p>
+                </div>
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Was haben wir vor  </h3>
+                
+                                  <p>
+                                      Wir wollen unsere Kunden darin unterstützen gute Produkte zu entwickeln. Und das
+                                      ist nur mit einem guten Team möglich. Gute Teams müssen unserer Ansicht nach immer
+                                      aus einer Mischung von internen und externen Entwicklern bestehen. Interne
+                                      Entwickler sorgen für die Stabilität und externe bringen neue Ideen, Know-How und
+                                      Perspektiven. Zudem können externe Entwickler temporär höheren Bedarf für
+                                      die Entwicklung neuer Produkte abdecken.<br />
+                                      Wir sehen unsere Aufgabe darin für Unternehmen externe Entwickler zu stellen, um
+                                      genau diese optimale Mischung zu gewährleisten. Dabei greifen wir sowohl auf
+                                      eigene Entwickler als auch auf unser Netzwerk an Unternehmen und Freelancern
+                                      zurück.
+                                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="content-section narrow" id="geschaeftsfuehrung">
+            <div class="picturey-content">
+                    <div class="yellowy-headline
+                                
+                                
+                                underline">
+                        <h2 class=" no-wrap">
+                                  <span>
+                                  </span>
+                                  <span>
+                                    Geschäftsführung
+                                  </span>
+                        </h2>
+                    </div>
+                <div class="picturey-content-items">
+                    <div class="picturey-content-image-item">
+                        <picture class="content-image">
+                            <source srcset="
+                                                /assets/content/1950/portrait-philipp-stickel.avif 1950w,
+                                                /assets/content/1930/portrait-philipp-stickel.avif 1930w,
+                                                /assets/content/1734/portrait-philipp-stickel.avif 1734w,
+                                                /assets/content/1300/portrait-philipp-stickel.avif 1300w,
+                                                /assets/content/965/portrait-philipp-stickel.avif 965w,
+                                                /assets/content/867/portrait-philipp-stickel.avif 867w,
+                                                /assets/content/700/portrait-philipp-stickel.avif 700w,
+                                                /assets/content/650/portrait-philipp-stickel.avif 650w,
+                                                /assets/content/560/portrait-philipp-stickel.avif 560w,
+                                                /assets/content/440/portrait-philipp-stickel.avif 440w,
+                                                /assets/content/350/portrait-philipp-stickel.avif 350w,
+                                                /assets/content/335/portrait-philipp-stickel.avif 335w,
+                                                /assets/content/280/portrait-philipp-stickel.avif 280w
+                                            "
+                                        sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                    >
+                            <source srcset="
+                                                /assets/content/1950/portrait-philipp-stickel.webp 1950w,
+                                                /assets/content/1930/portrait-philipp-stickel.webp 1930w,
+                                                /assets/content/1734/portrait-philipp-stickel.webp 1734w,
+                                                /assets/content/1300/portrait-philipp-stickel.webp 1300w,
+                                                /assets/content/965/portrait-philipp-stickel.webp 965w,
+                                                /assets/content/867/portrait-philipp-stickel.webp 867w,
+                                                /assets/content/700/portrait-philipp-stickel.webp 700w,
+                                                /assets/content/650/portrait-philipp-stickel.webp 650w,
+                                                /assets/content/560/portrait-philipp-stickel.webp 560w,
+                                                /assets/content/440/portrait-philipp-stickel.webp 440w,
+                                                /assets/content/350/portrait-philipp-stickel.webp 350w,
+                                                /assets/content/335/portrait-philipp-stickel.webp 335w,
+                                                /assets/content/280/portrait-philipp-stickel.webp 280w
+                                            "
+                                    sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                >
+                                <img src="assets/content/650/portrait-philipp-stickel.webp"
+                                 alt="portrait-philipp-stickel" loading="lazy"
+                                
+                                
+                                >
+                        </picture>
+                        <div class="yellowy-headline
+                                    pull-above
+                                    pull-right
+                                    ">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          Philipp
+                                      </span>
+                                      <span>
+                                        Stickel
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description pull-right">
+                                      <p>
+                                          Philipp Stickel entschied sich nach seinem Architekturstudium
+                                          die Neochic GmbH zu gründen. Dabei bringt er als Geschäftsführer
+                                          seine Erfahrung aus der Architektur für die Planung von
+                                          großen Projekten, gestalterisches Verständnis und einen Überblick
+                                          für die Businessanforderungen ein.
+                                      </p>
+                            <div class="call-to-action-wrapper">
+                                <a href="mailto:philipp@neochic.de" class="call-to-action ">
+                                    >> Kontakt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="picturey-content-image-item">
+                        <picture class="content-image">
+                            <source srcset="
+                                                /assets/content/1950/portrait-christoph-stickel.avif 1950w,
+                                                /assets/content/1930/portrait-christoph-stickel.avif 1930w,
+                                                /assets/content/1734/portrait-christoph-stickel.avif 1734w,
+                                                /assets/content/1300/portrait-christoph-stickel.avif 1300w,
+                                                /assets/content/965/portrait-christoph-stickel.avif 965w,
+                                                /assets/content/867/portrait-christoph-stickel.avif 867w,
+                                                /assets/content/700/portrait-christoph-stickel.avif 700w,
+                                                /assets/content/650/portrait-christoph-stickel.avif 650w,
+                                                /assets/content/560/portrait-christoph-stickel.avif 560w,
+                                                /assets/content/440/portrait-christoph-stickel.avif 440w,
+                                                /assets/content/350/portrait-christoph-stickel.avif 350w,
+                                                /assets/content/335/portrait-christoph-stickel.avif 335w,
+                                                /assets/content/280/portrait-christoph-stickel.avif 280w
+                                            "
+                                        sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                    >
+                            <source srcset="
+                                                /assets/content/1950/portrait-christoph-stickel.webp 1950w,
+                                                /assets/content/1930/portrait-christoph-stickel.webp 1930w,
+                                                /assets/content/1734/portrait-christoph-stickel.webp 1734w,
+                                                /assets/content/1300/portrait-christoph-stickel.webp 1300w,
+                                                /assets/content/965/portrait-christoph-stickel.webp 965w,
+                                                /assets/content/867/portrait-christoph-stickel.webp 867w,
+                                                /assets/content/700/portrait-christoph-stickel.webp 700w,
+                                                /assets/content/650/portrait-christoph-stickel.webp 650w,
+                                                /assets/content/560/portrait-christoph-stickel.webp 560w,
+                                                /assets/content/440/portrait-christoph-stickel.webp 440w,
+                                                /assets/content/350/portrait-christoph-stickel.webp 350w,
+                                                /assets/content/335/portrait-christoph-stickel.webp 335w,
+                                                /assets/content/280/portrait-christoph-stickel.webp 280w
+                                            "
+                                    sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                >
+                                <img src="assets/content/650/portrait-christoph-stickel.webp"
+                                 alt="portrait-christoph-stickel" loading="lazy"
+                                
+                                
+                                >
+                        </picture>
+                        <div class="yellowy-headline
+                                    pull-above
+                                    pull-right
+                                    ">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          Christoph
+                                      </span>
+                                      <span>
+                                        Stickel
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description pull-right">
+                                      <p>
+                                          Christoph Stickel hat schon während des Informatikstudiums
+                                          an Open-Source-Projekten und als Freelancer gearbeitet. Nach dem Studium
+                                          beteiligte er sich an der Gründung der Neochic GmbH und ist
+                                          dabei vor allem für die technische Ausrichtung und sicherstellung
+                                          der Qualität verantwortlich.
+                                      </p>
+                            <div class="call-to-action-wrapper">
+                                <a href="mailto:christoph@neochic.de" class="call-to-action ">
+                                    >> Kontakt
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</div>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>

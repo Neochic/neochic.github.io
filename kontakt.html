@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.default-header{display:flex;flex-direction:column;position:relative;background-color:var(--neo-white);padding-bottom:0;margin-top:50px}@media only screen and (min-width: 1450px){.default-header{margin-top:100px}}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
+</head>
+<body id="start">
+<div class="main-content">
+        <section class="default-header neo-section">
+        <div class="main-header">
+        <a href="/"><img class="company-icon"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link active" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
+    </div>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="">
+                Treten Sie mit uns in Kontakt.      </h1>
+        
+                </div>
+        
+                    <div class="sub-title">
+                        Benötigen Sie Unterstützung bei Ihren Projekten? Wir helfen Ihnen gerne mit unseren engagierten Mitarbeitern das beste Ergebnis zu erzielen.
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+        <section class="contact-information neo-section">
+        <div>
+            +49 7146 537 99 35<br />
+            <a href="mailto:info@neochic.de">info@neochic.de</a>
+        </div>
+    </section>
+    
+</div>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>

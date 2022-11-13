@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.default-header{display:flex;flex-direction:column;position:relative;background-color:var(--neo-white);padding-bottom:0;margin-top:50px}@media only screen and (min-width: 1450px){.default-header{margin-top:100px}}.white-section{margin:80px 20px 50px}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.yellowy-headline{text-align:left;align-self:flex-start;margin-bottom:35px;position:relative;z-index:1}.yellowy-headline span{display:block}.yellowy-headline h2{font:normal normal 700 30px/1.3em Poppins}@media only screen and (min-width: 375px){.yellowy-headline h2{font-size:calc(1.8604651163vw + 23.023255814px)}}@media only screen and (min-width: 1450px){.yellowy-headline h2{font-size:50px}}.yellowy-headline.underline h2 :last-child{display:inline-block;position:relative}.yellowy-headline.underline h2 :last-child:after{content:"";background-color:var(--neo-yellow);height:.45em;width:92%;position:absolute;bottom:0;right:-6%;z-index:-1}.call-to-action{display:inline-block;background:var(--neo-yellow) 0 0 no-repeat padding-box;color:var(--neo-black);font:normal normal 700 calc(1.2vw + 10px)/calc(1.4vw + 16px) Poppins;padding:10px 20px;text-decoration:none;white-space:nowrap;align-self:center;transition:color .3s}@media only screen and (min-width: 600px){.call-to-action{font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins}}@media only screen and (min-width: 1920px){.call-to-action{font:normal normal 700 35px/44px Poppins}}.call-to-action:hover{color:#fff}.texty-content{color:var(--color-text);display:flex;flex-direction:column;flex-wrap:wrap;margin:auto;padding:50px 0;justify-content:center;align-items:center}@media only screen and (min-width: 1100px){.texty-content{max-width:1350px}}@media only screen and (min-width: 1450px){.texty-content{padding:100px 0}}.texty-content+.texty-content{padding-top:0}.texty-content .texty-wrapper{display:flex;width:100%;max-width:1200px;margin:0;row-gap:35px;column-gap:50px;justify-content:space-between;flex-direction:column}@media only screen and (min-width: 600px){.texty-content .texty-wrapper{margin-left:50px;margin-right:50px;width:calc(100% - 2 * 50px)}}@media only screen and (min-width: 800px){.texty-content .texty-wrapper{flex-direction:row}}.texty-content .call-to-action{margin-top:20px}@media only screen and (min-width: 1450px){.texty-content .call-to-action{margin-top:50px}}.texty-content.add-scroll-margin{scroll-margin-top:80px}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.texty-content-item{margin:0;font:normal normal normal 16px/27px Roboto;flex:1;max-width:520px}.texty-content-item h3{font:normal normal bold 25px/1.3em Poppins;margin-bottom:15px}@media only screen and (min-width: 375px){.texty-content-item h3{font-size:calc(.4651162791vw + 23.2558139535px)}}@media only screen and (min-width: 1450px){.texty-content-item h3{font-size:30px}}.texty-content-item ul{list-style-type:none;margin:0;padding:0}.texty-content-item li{margin:0;padding:5px 0 5px 20px;position:relative}.texty-content-item li:before{display:inline-block;position:absolute;left:0;top:15px;content:"";width:10px;height:10px;border-radius:10px;background-color:var(--neo-yellow)}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
+</head>
+<body id="start">
+    <a href="kontakt.html" class="contact-sticky">
+    Kontakt
+</a>
+
+<div class="main-content">
+        <section class="default-header neo-section">
+        <div class="main-header">
+        <a href="/"><img class="company-icon"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
+    </div>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="">
+                Senior Cloud Architekt (m/w/d)      </h1>
+        
+                </div>
+        
+                    <div class="sub-title">
+                        Wir suchen einen Senior Cloud Architekt, der Erfahrung mit den üblichen Cloudanbietern, Kubernetes und Infrastructure as Code mitbringt.
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="neo-section white-section">
+        <div class="texty-content">
+            <div class="yellowy-headline
+                        
+                        
+                        underline">
+                <h2 class=" no-wrap">
+                          <span>
+                              Suchst du neue
+                          </span>
+                          <span>
+                            Herausforderungen?
+                          </span>
+                </h2>
+            </div>
+          <div class="texty-wrapper">
+            <div class="texty-content-item">
+                    <h3 class="">
+                Stellenbeschreibung  </h3>
+            
+                              <p>
+                                  Wir suchen zum nächstmöglichen Zeitpunkt einen Senior Cloud Architekt (m/w/d)
+                                  zur Verstärkung für die Konzeption und Umsetzung der Cloud Infrastruktur für
+                                  den Betrieb von Webapplikationen.
+                                  Du wirst mit uns gemeinsam andere Unternehmen bei der Entwicklung
+                                  ihrer Projekte unterstützen und beraten. Dies geschieht an einzelnen Tagen
+                                  beim Kunden vor Ort, remote bei uns im Büro oder ganz bequem von Zuhause.
+                              </p>
+            </div>
+            <div class="texty-content-item">
+                    <h3 class="">
+                Anforderungen  </h3>
+            
+                              <ul>
+                                  <li>
+                                      Mehrere Jahre Berufserfahrung im Betrieb von Webapplikationen und Webservices
+                                      bei Cloudhosting-Anbietern.
+                                  </li>
+                                  <li>
+                                      Gute Linux Kenntnisse
+                                  </li>
+                                  <li>
+                                      Erfahrung mit
+                                      <ul>
+                                          <li>Container Engines (wie z.B. Docker)</li>
+                                          <li>Kubernetes</li>
+                                          <li>Infrastructure as Code (z.B. Terraform, AWS CDK)</li>
+                                          <li>CI/CD</li>
+                                  </li>
+                              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="texty-content">
+          <div class="texty-wrapper">
+            <div class="texty-content-item">
+                    <h3 class="">
+                Wünschenswerte Erfahrung und Kenntnisse (optional)  </h3>
+            
+                              <ul>
+                                  <li>Abgeschlossenes Studium oder Ausbildung im Bereich Informatik (Vorzugsweise mit
+                                      einem Fokus auf Medien, UI, UX oder Gestaltung).</li>
+                                  <li>Erfahrungen mit
+                                      <ul>
+                                          <li>Go</li>
+                                          <li>Services verschiedener Cloudhosting-Anbieter wie Azure, Google Cloud Platform oder AWS</li>
+                                          <li>Berechtigungsmanagement</li>
+                                      </ul>
+                                  </li>
+                                  <li>Erfahrung in der Webapplikations- oder Webserviceentwicklung</li>
+                              </ul>
+            </div>
+            <div class="texty-content-item">
+                    <h3 class="">
+                Was wir bieten  </h3>
+            
+                              <ul>
+                                  <li>Abwechselnde Projekte auf einem hohen
+                                      Niveau, wodurch eine sehr hohe Lernkurve entsteht.</li>
+                                  <li>Interessante Projekte bei großen Kunden</li>
+                                  <li>Faire leistungsbezogene Bezahlung</li>
+                                  <li>Durch unsere kleine Unternehmensgröße haben wir eine hohe Flexibilität
+                                      und können auf individuelle Wünsche und Bedürfnisse eingehen
+                                      (z.B. spontane Urlaubsanträge, einzusetzende Soft-/ und Hardware, etc.).</li>
+                                  <li>Flache Unternehmensstruktur, wodurch du von Anfang an den Weg
+                                      des Unternehmens mitgestalten kannst.</li>
+                                  <li>
+                                      Eine Unternehmenskultur, die eine gute Work-Life-Balance
+                                      und einen ausgeglichenen Lifestyle ermöglicht.
+                                  </li>
+                              </ul>
+            </div>
+          </div>
+                  <a href="mailto:info@neochic.de?subject&#x3D;Bewerbung%20als%20Senior%20Cloud%20Architekt%20(m%2Fw%2Fd)&amp;body&#x3D;Hallo%2C%0D%0A%0D%0Ahiermit%20bewerbe%20ich%20mich%20auf%20die%20Stelle%20Senior%20Cloud%20Architekt%20(m%2Fw%2Fd).%0D%0AAnbei%20findet%20ihr%20meinen%20Lebenslauf%20und%20gegebenenfalls%20eine%20Projektliste%20mit%20Referenzen.%0D%0A%0D%0AViele%20Gr%C3%BC%C3%9Fe" class="call-to-action ">
+                      >> Jetzt bewerben
+                  </a>
+        
+            <div class="narrow-wrapper">
+                <p class="job-contact">
+                    Sende uns deinen Lebenslauf ggf. mit Projektliste an <a href="mailto:info@neochic.de" class="default-link">
+                info@neochic.de</a>
+             oder nimm einfach telefonisch Kontakt mit uns auf (07146 / 537 99 35).
+                </p>
+        </div>
+        
+        </div>
+    </section>
+</div>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>

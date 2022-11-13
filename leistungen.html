@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}.call-to-action{display:inline-block;background:var(--neo-yellow) 0 0 no-repeat padding-box;color:var(--neo-black);font:normal normal 700 calc(1.2vw + 10px)/calc(1.4vw + 16px) Poppins;padding:10px 20px;text-decoration:none;white-space:nowrap;align-self:center;transition:color .3s}@media only screen and (min-width: 600px){.call-to-action{font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins}}@media only screen and (min-width: 1920px){.call-to-action{font:normal normal 700 35px/44px Poppins}}.call-to-action:hover{color:#fff}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.image-header{box-sizing:border-box;position:relative;display:flex;flex-direction:column;width:100%;min-height:100vh;padding-bottom:10vw}.image-header .image-header-background{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%}.image-header .image-header-background img{width:100%;height:100%;object-fit:cover}.image-header .main-header{position:relative;z-index:2}.image-header .page-title{flex:1}.image-header .call-to-action{position:relative;z-index:1;align-self:center}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
+</head>
+<body id="start">
+    <a href="kontakt.html" class="contact-sticky">
+    Kontakt
+</a>
+
+<div class="main-content">
+        <section class="image-header neo-section">
+            <picture class="image-header-background">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/microfrontend-diagramm.avif 1440w,
+                            /assets/header/195-9/1170/microfrontend-diagramm.avif 1170w,
+                            /assets/header/195-9/828/microfrontend-diagramm.avif 828w,
+                            /assets/header/195-9/750/microfrontend-diagramm.avif 750w,
+                            /assets/header/195-9/640/microfrontend-diagramm.avif 640w
+                        "
+                        sizes="100vw">
+                <source  media="(max-aspect-ratio: 2/3)"
+                        srcset="
+                            /assets/header/195-9/1440/microfrontend-diagramm.webp 1440w,
+                            /assets/header/195-9/1170/microfrontend-diagramm.webp 1170w,
+                            /assets/header/195-9/828/microfrontend-diagramm.webp 828w,
+                            /assets/header/195-9/750/microfrontend-diagramm.webp 750w,
+                            /assets/header/195-9/640/microfrontend-diagramm.webp 640w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/microfrontend-diagramm.avif 3840w,
+                            /assets/header/3-2/3456/microfrontend-diagramm.avif 3456w,
+                            /assets/header/3-2/2880/microfrontend-diagramm.avif 2880w,
+                            /assets/header/3-2/2560/microfrontend-diagramm.avif 2560w,
+                            /assets/header/3-2/1920/microfrontend-diagramm.avif 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 15/9)"
+                        srcset="
+                            /assets/header/3-2/3840/microfrontend-diagramm.webp 3840w,
+                            /assets/header/3-2/3456/microfrontend-diagramm.webp 3456w,
+                            /assets/header/3-2/2880/microfrontend-diagramm.webp 2880w,
+                            /assets/header/3-2/2560/microfrontend-diagramm.webp 2560w,
+                            /assets/header/3-2/1920/microfrontend-diagramm.webp 1920w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/microfrontend-diagramm.avif 5120w,
+                            /assets/header/16-9/3840/microfrontend-diagramm.avif 3840w,
+                            /assets/header/16-9/3456/microfrontend-diagramm.avif 3456w,
+                            /assets/header/16-9/2560/microfrontend-diagramm.avif 2560w,
+                            /assets/header/16-9/1920/microfrontend-diagramm.avif 1920w,
+                            /assets/header/16-9/1280/microfrontend-diagramm.avif 1280w
+                        "
+                        sizes="100vw">
+                <source media="(max-aspect-ratio: 19/9)"
+                        srcset="
+                            /assets/header/16-9/5120/microfrontend-diagramm.webp 5120w,
+                            /assets/header/16-9/3840/microfrontend-diagramm.webp 3840w,
+                            /assets/header/16-9/3456/microfrontend-diagramm.webp 3456w,
+                            /assets/header/16-9/2560/microfrontend-diagramm.webp 2560w,
+                            /assets/header/16-9/1920/microfrontend-diagramm.webp 1920w,
+                            /assets/header/16-9/1280/microfrontend-diagramm.webp 1280w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/microfrontend-diagramm.avif 5120w,
+                            /assets/header/21-9/3840/microfrontend-diagramm.avif 3840w,
+                            /assets/header/21-9/2560/microfrontend-diagramm.avif 2560w
+                        "
+                        sizes="100vw">
+                <source srcset="
+                            /assets/header/21-9/5120/microfrontend-diagramm.webp 5120w,
+                            /assets/header/21-9/3840/microfrontend-diagramm.webp 3840w,
+                            /assets/header/21-9/2560/microfrontend-diagramm.webp 2560w
+                        "
+                        sizes="100vw">
+                <img src="/assets/header/16-9/1920/microfrontend-diagramm.webp" alt="microfrontend-diagramm" loading="eager">
+            </picture>
+        <div class="main-header">
+        <a href="/"><img class="company-icon inverted"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle inverted" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link active" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
+    </div>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="inverted">
+                Beratung und Entwicklung für Ihr Unternehmen.      </h1>
+        
+                </div>
+        
+            </div>
+        </div>
+        <a href="#leistungen" class="call-to-action ">
+            >> Zu den Leistungen
+        </a>
+    </section>
+    
+    
+    <section class="content-section narrow" id="leistungen">
+            <div class="image-with-text image-right">
+              <div class="left">
+                  <picture class="content-image">
+                      <source srcset="
+                                          /assets/content/1950/oemer-am-kanbanboard.avif 1950w,
+                                          /assets/content/1930/oemer-am-kanbanboard.avif 1930w,
+                                          /assets/content/1734/oemer-am-kanbanboard.avif 1734w,
+                                          /assets/content/1300/oemer-am-kanbanboard.avif 1300w,
+                                          /assets/content/965/oemer-am-kanbanboard.avif 965w,
+                                          /assets/content/867/oemer-am-kanbanboard.avif 867w,
+                                          /assets/content/700/oemer-am-kanbanboard.avif 700w,
+                                          /assets/content/650/oemer-am-kanbanboard.avif 650w,
+                                          /assets/content/560/oemer-am-kanbanboard.avif 560w,
+                                          /assets/content/440/oemer-am-kanbanboard.avif 440w,
+                                          /assets/content/350/oemer-am-kanbanboard.avif 350w,
+                                          /assets/content/335/oemer-am-kanbanboard.avif 335w,
+                                          /assets/content/280/oemer-am-kanbanboard.avif 280w
+                                      "
+                                  sizes="(min-width: 1450px) 867px, (min-width: 1100px) calc((100vw - 150px) / 3 * 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                  >
+                      <source srcset="
+                                          /assets/content/1950/oemer-am-kanbanboard.webp 1950w,
+                                          /assets/content/1930/oemer-am-kanbanboard.webp 1930w,
+                                          /assets/content/1734/oemer-am-kanbanboard.webp 1734w,
+                                          /assets/content/1300/oemer-am-kanbanboard.webp 1300w,
+                                          /assets/content/965/oemer-am-kanbanboard.webp 965w,
+                                          /assets/content/867/oemer-am-kanbanboard.webp 867w,
+                                          /assets/content/700/oemer-am-kanbanboard.webp 700w,
+                                          /assets/content/650/oemer-am-kanbanboard.webp 650w,
+                                          /assets/content/560/oemer-am-kanbanboard.webp 560w,
+                                          /assets/content/440/oemer-am-kanbanboard.webp 440w,
+                                          /assets/content/350/oemer-am-kanbanboard.webp 350w,
+                                          /assets/content/335/oemer-am-kanbanboard.webp 335w,
+                                          /assets/content/280/oemer-am-kanbanboard.webp 280w
+                                      "
+                              sizes="(min-width: 1450px) 867px, (min-width: 1100px) calc((100vw - 150px) / 3 * 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                  >
+                          <img src="assets/content/867/oemer-am-kanbanboard.webp"
+                           alt="oemer-am-kanbanboard" loading="lazy"
+                          
+                          
+                          >
+                  </picture>
+              </div>
+              <div class="right">
+                  <div class="yellowy-headline
+                              
+                              
+                              underline">
+                      <h2 class=" no-wrap">
+                                <span>
+                                    Unsere
+                                </span>
+                                <span>
+                                  Leistungen
+                                </span>
+                      </h2>
+                  </div>
+                          <p>
+                              Hoch qualifizierte funktionsübergreifende Teams sind wichtig für
+                              ein erfolgreiches Projekt. Daher buchen Sie bei uns nicht nur
+                              einfache Entwickler. Wir setzten neben der eigentlichen
+                              Entwicklung des Produkts auch darauf die Teams, in denen
+                              wir arbeiten, weiterzuentwickeln.<br />
+                              So optimieren wir Prozesse und geben Wissen weiter, damit Sie
+                              nachhaltig profitieren.
+                          </p>
+                          <p>
+                              Mit Erfahrung aus verschiedensten Projekten in verschiedenen
+                              Branchen können wir helfen die richtigen Architekturentscheidungen
+                              zu treffen.
+                          </p>
+                      <div class="call-to-action-wrapper">
+                          <a href="leistungen.html#das-bieten-wir" class="call-to-action ">
+                              >> Das bieten wir
+                          </a>
+                      </div>
+              </div>
+        </div>
+    </section>
+    
+        <div class="word-wall">
+        <div>Automated Testing / Agile Development / Docker / Java</div>
+        <div>Spring / Angular / Docker / Automated / Java Testing</div>
+        <div>Agile Development / Docker / Java / AWS / Teraform / Spring</div>
+        <div>Angular / Docker / Micro Services / Automated / Java Testing</div>
+        <div>Spring / Angular / Docker / Automated / Java Testing</div>
+    </div>
+    
+    
+    <section class="content-section dark remove-padding-top">
+        <div class="intro ">
+          <div class="intro-header">
+            <picture class="image">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-am-tisch.avif 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-am-tisch.avif 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-am-tisch.avif 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-am-tisch.avif 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-am-tisch.avif 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-am-tisch.avif 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-am-tisch.avif 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-am-tisch.avif 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-am-tisch.avif 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-am-tisch.avif 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-am-tisch.avif 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-am-tisch.webp 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-am-tisch.webp 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-am-tisch.webp 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-am-tisch.webp 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-am-tisch.webp 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-am-tisch.webp 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-am-tisch.webp 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-am-tisch.webp 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-am-tisch.webp 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-am-tisch.webp 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-am-tisch.webp 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <img src="assets/intro/1820/christoph-stickel-und-oemer-almali-am-tisch.webp"
+                     alt="christoph-stickel-und-oemer-almali-am-tisch" loading="lazy">
+            </picture>
+        
+          </div>
+          <div class="intro-content">
+            <div class="texty-content add-scroll-margin" id="das-bieten-wir">
+                <div class="yellowy-headline
+                            
+                            
+                            underline">
+                    <h2 class="inverted no-wrap">
+                              <span>
+                                  Was können wir
+                              </span>
+                              <span>
+                                für Sie tun?
+                              </span>
+                    </h2>
+                </div>
+              <div class="texty-wrapper">
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Agile Entwicklung  </h3>
+                
+                                  <p>
+                                      Wir sind in erster Linie Softwareentwickler. Neben der Konzeption, Beratung und Optimierung
+                                      der Abläufe bringen wir als Teil Ihres Teams unsere gesamte Erfahrung ein, um zusammen gute
+                                      und wartbare Software zu entwickeln.
+                                  </p>
+                                  <p>
+                                      So können wir Ihnen insbesondere dabei helfen Lastspitzen, z.B. bei der Entwicklung eines
+                                      neuen Produkts oder einer größeren Umstellung wie einer Cloud-Migration, abzufedern. Oder
+                                      Ihr Team dabei unterstützen, wenn es für neuen Herausforderungen Wissen aufbauen muss.
+                                  </p>
+                </div>
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Softwarearchitektur  </h3>
+                
+                                  <p>
+                                      Da wir in vielen Projekten Erfahrung sammeln, haben wir einen besonders guten
+                                      Überblick über die Technologien und Methoden die in verschiedenen Unternehmen
+                                      für die Softwareentwicklung verwendet werden.
+                                  </p>
+                                  <p>
+                                      Diese Erfahrung hilft uns einen passenden Technologiestack und eine gute Struktur
+                                      für das jeweilige Produkt zu finden. So haben wir Experten die sich von der
+                                      Frontendarchitektur mit Micro-Frontends und Design Systemen, über Micro-Service-Backends
+                                      bis hin zu Cloud-Infrastruktur auskennen und eine Architektur die alle diese
+                                      Bereiche vereint entwickeln können.
+                                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="texty-content">
+              <div class="texty-wrapper">
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Mentoring und Wissenstransfer  </h3>
+                
+                                  <p>
+                                      Stetiger Wissenstransfer hin zu den anderen Entwicklern ist uns wichtig.
+                                      So profitiert ihr Team langfristig, selbst dann noch, wenn wir nicht
+                                      mehr benötigt werden. Dabei bringen wir Erfahrung von verschiedenen Projekten
+                                      ein, um eventuell bestehende Betriebsblindheit aufzubrechen.
+                                  </p>
+                                  <p>
+                                      Zudem versuchen wir bestehende Wissens-Silos abzubauen und keine neuen entstehen
+                                      zu lassen. Insbesondere für uns als externe Entwickler ist es wichtig,
+                                      dass keine Abhängigkeiten zu uns entstehen, sondern wir temporär Teams unterstützen
+                                      und sie dabei ihre Eigenständigkeit behalten und ausbauen.
+                                  </p>
+                </div>
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Agile Transformation  </h3>
+                
+                                  <p>
+                                      Wir glauben fest daran, dass agile Teams am besten für die Entwicklung und Betreuung von Softwareprodukten
+                                      geeignet sind. In flachen, vertikalen Hierarchien, in denen Teams Verantwortung für Ihr Produkt übertragen
+                                      wird, können diese über sich hinauswachsen.
+                                  </p>
+                                  <p>
+                                      So sind wir auf agile Entwicklung spezialisiert und unterstützen das Team dabei ihre agilen
+                                      Prozesse zu optimieren. Dies beinhaltet Themen wir Continuous Delivery (CD), automatisches Testen,
+                                      Fast Feedback Cycles und aktive Stakeholder Partizipation.
+                                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="neo-section white-section">
+        <section class="neo-section quote">
+          <blockquote>
+                          Bei der Umsetzung eines neuen Produkts wurden wir von Neochic bei der Entwicklung und Architektur
+                          bestens unterstützt.
+          </blockquote>
+          <div class="quote-info">
+            <strong>Serge Gebhardt</strong>
+            <span class="position">Director of Engineering AutoScout24</span>
+          </div>
+        </section>
+    </section>
+</div>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
+</body>
+</html>

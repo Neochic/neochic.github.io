@@ -1,192 +1,624 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="de">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<title>Neochic Mediasolutions - Kreativagentur aus Stuttgart</title>
-    <meta name="description" content="Kreatives Design & starke Technik. Neochic Mediasolutions ist Ihre Werbeagentur für Webdesign, Webentwicklung, Corporate Design, Fotografie und Videobearbeitung." />
-    <meta name="keywords" content="Kreativagentur, Werbeagentur, Webdesign, Webentwicklung, Corporate Design, Fotografie, Videobearbeitung" />
-    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/main.css?1615367015" />
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="/css/noscript.css" />
-    </noscript>
-    <script type="text/javascript">
-        var BaseURL = "/";
-    </script>
+  <meta charset="UTF-8">
+  <meta name="description" content="Put your description here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="/">
+  <title>Neochic GmbH</title>
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="/assets/fonts/poppins-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/roboto-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+        @font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:400;src:local("Poppins Regular "),local("Poppins-Regular"),url("./assets/fonts/poppins-latin-400.woff2") format("woff2"),url("./assets/fonts/poppins-latin-400.woff") format("woff")}@font-face{font-family:"Poppins";font-style:normal;font-display:swap;font-weight:700;src:local("Poppins Bold "),local("Poppins-Bold"),url("./assets/fonts/poppins-latin-700.woff2") format("woff2"),url("./assets/fonts/poppins-latin-700.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:400;src:local("Roboto Regular "),local("Roboto-Regular"),url("./assets/fonts/roboto-latin-400.woff2") format("woff2"),url("./assets/fonts/roboto-latin-400.woff") format("woff")}@font-face{font-family:"Roboto";font-style:normal;font-display:swap;font-weight:700;src:local("Roboto Bold "),local("Roboto-Bold"),url("./assets/fonts/roboto-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-latin-700.woff") format("woff")}:root{--neo-black: #000000;--neo-white: #ffffff;--neo-yellow: #E9D852;--section-horizontal-margin: 20px;--section-horizontal-margin-s: 50px;--color-text: var(--neo-black);--color-text-inverted: var(--neo-white)}html{scroll-behavior:smooth}body{font-family:Poppins,Verdana,sans-serif;letter-spacing:0;background-color:var(--neo-white);margin:0 auto;min-width:375px}img{user-select:none}.neo-section{padding:0}@media only screen and (min-width: 1100px){.neo-section{padding:0 0}}@media only screen and (min-width: 1920px){.neo-section{padding:0 calc((100% - 1920px)/2)}}@media only screen and (min-width: 1450px){.neo-section.narrow{padding:0 calc((100% - 1450px)/2)}}.contact-sticky{writing-mode:vertical-rl;transform:rotate(180deg);color:var(--color-text-inverted);background-color:var(--neo-black);text-decoration:none;display:block;position:fixed;right:0;top:50%;z-index:9;text-transform:uppercase;padding:20px 10px 20px 5px;font-weight:bold;font-size:25px}.nav-toggle{align-self:center;cursor:pointer}.nav-toggle:before,.nav-toggle:after{display:block;content:"";width:35px;height:4px;margin:5px;padding:0;background-color:#000;border-radius:4px 4px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:before,.nav-toggle:after{width:50px;margin:10px;height:5px;border-radius:5px 5px}}.nav-toggle:after{width:25px}@media only screen and (min-width: 600px){.nav-toggle:after{width:35px}}.nav-toggle:hover:after{width:35px;transition:width .2s ease}@media only screen and (min-width: 600px){.nav-toggle:hover:after{width:50px}}.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transition:transform .2s ease,width .2s ease;transform:rotate(45deg) translateX(calc(25px / 5));width:35px}@media only screen and (min-width: 600px){.nav-toggle.burger-menu-show:before,.nav-toggle.burger-menu-show:after{transform:rotate(45deg) translateX(calc(50px / 5));width:50px}}.nav-toggle.burger-menu-show:after{transform:rotate(-45deg) translateX(calc(50px / 5))}.nav-toggle.inverted:before,.nav-toggle.inverted:after{background-color:var(--neo-white)}.burger-menu{display:none;visibility:hidden}.main-header{--horizontal-margin: var(--section-horizontal-margin);display:flex;justify-content:space-between;align-items:flex-start;margin:0 var(--horizontal-margin) 35px}@media only screen and (min-width: 600px){.main-header{--horizontal-margin: var(--section-horizontal-margin-s)}}@media only screen and (min-width: 800px){.main-header{margin:20px var(--horizontal-margin) 80px}}@media only screen and (min-width: 1920px){.main-header{margin:35px var(--horizontal-margin) 100px}}.main-header .company-icon{display:block}.main-header .company-icon.inverted{filter:invert(100%)}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.page-title{display:flex;flex-direction:column;position:relative;padding-bottom:0;--horizontal-margin: var(--section-horizontal-margin)}@media only screen and (min-width: 600px){.page-title{--horizontal-margin: var(--section-horizontal-margin-s)}}.page-title .title-wrapper{display:grid;grid-template-columns:repeat(12, 1fr);grid-auto-rows:minmax(100px, auto);row-gap:6px;color:var(--neo-black);margin-left:var(--horizontal-margin);margin-right:var(--horizontal-margin)}.page-title .title-wrapper .main-title{font:normal normal 700 10vw/12.5vw Poppins;text-align:left;grid-column-start:1;grid-column-end:11;grid-row:1/2;padding-bottom:35px}@media only screen and (min-width: 600px){.page-title .title-wrapper .main-title{font:normal normal 700 6.25vw/7.6923076923vw Poppins;grid-column-end:10}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .main-title{font:normal normal 700 4vw/4.347826087vw Poppins;grid-column-end:8}}.page-title .title-wrapper .sub-title{font:normal normal normal 14px/18px Roboto,sans-serif;text-align:left;grid-column-start:1;grid-column-end:10}@media only screen and (min-width: 600px){.page-title .title-wrapper .sub-title{font:normal normal normal 18px/23px Roboto,sans-serif;grid-column-end:8}}@media only screen and (min-width: 1100px){.page-title .title-wrapper .sub-title{grid-column-end:4}}.default-header{display:flex;flex-direction:column;position:relative;background-color:var(--neo-white);padding-bottom:0;margin-top:50px}@media only screen and (min-width: 1450px){.default-header{margin-top:100px}}h1{color:var(--neo-black);font:normal normal 700 calc(4.2vw + 18px)/calc(4.4vw + 24px) Poppins,Verdana,sans-serif;margin:0 auto}@media only screen and (min-width: 1920px){h1{font:normal normal 700 80px/90px Poppins,Verdana,sans-serif}}h2{color:var(--neo-black);font:normal normal 700 calc(2vw + 18px)/calc(2.2vw + 24px) Poppins;margin:60px auto 0}@media only screen and (min-width: 1920px){h2{font:normal normal 700 50px/60px Poppins}}h2:first-child{margin-top:0}h3{color:var(--neo-black);font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins,Verdana,sans-serif;margin:60px auto 0}@media only screen and (min-width: 1920px){h3{font:normal normal 700 30px/40px Poppins,Verdana,sans-serif}}h3:first-child{margin-top:0}h1.inverted,h2.inverted,h3.inverted{color:var(--neo-white)}h1.no-wrap,h2.no-wrap,h3.no-wrap{white-space:nowrap}.call-to-action{display:inline-block;background:var(--neo-yellow) 0 0 no-repeat padding-box;color:var(--neo-black);font:normal normal 700 calc(1.2vw + 10px)/calc(1.4vw + 16px) Poppins;padding:10px 20px;text-decoration:none;white-space:nowrap;align-self:center;transition:color .3s}@media only screen and (min-width: 600px){.call-to-action{font:normal normal 700 calc(1vw + 18px)/calc(1.2vw + 24px) Poppins}}@media only screen and (min-width: 1920px){.call-to-action{font:normal normal 700 35px/44px Poppins}}.call-to-action:hover{color:#fff}.intro{margin-top:20vw;display:flex;flex-wrap:wrap;--color-text: var(--neo-white)}@media only screen and (min-width: 1920px){.intro{margin-top:calc(15vw + 96px)}}.intro-header{margin:-15vw -20px 0;position:relative;flex:1 0 100%}@media only screen and (min-width: 600px){.intro-header{margin-left:0;margin-right:0}}.intro-header img{display:block;margin:0;width:100%;aspect-ratio:455/256}@media only screen and (min-width: 600px){.intro-header img{margin:auto;width:calc(100% - var(--horizontal-margin)*2)}}.intro-header h2{font:normal normal 700 6.25vw/7.6923076923vw Poppins;color:var(--neo-white)}@media only screen and (min-width: 1100px){.intro-header h2{font:normal normal 700 4vw/4.347826087vw Poppins}}@media only screen and (min-width: 1920px){.intro-header h2{font:normal normal 700 78px/84px Poppins}}.intro-header .caption{position:absolute;top:50%;left:50%;width:60%;transform:translate(-50%, -50%);text-align:center}.intro-header .call-to-action{margin-top:20px}@media only screen and (min-width: 1450px){.intro-header .call-to-action{margin-top:50px}}.intro-content{flex:1 0 100%}.intro.header-down{border-top:0;border-bottom:200px solid var(--neo-white)}.intro.header-down .intro-header{order:1;margin-bottom:-200px;margin-top:35px}
+  </style>
+
+  <link rel="preload" href="main.css" as="style" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="main.css"></noscript>
+
 </head>
-<body class="" data-cursor-details="&lt;span id=&quot;actionInfo&quot;&gt;Klicken für&lt;br /&gt;&lt;strong&gt;Details&lt;/strong&gt;&lt;/span&gt;" data-cursor-next-page="&lt;span id=&quot;actionInfo&quot;&gt;Nächste&lt;br /&gt;&lt;strong&gt;Seite&lt;/strong&gt;&lt;/span&gt;">
-<div class="section loading">
-    <h1>Die <strong>Webseite</strong> wird <strong>geladen</strong>.</h1>
-</div>
-<a href="/" id="logo"><img src="/img/logo.png?1615367015" width="160" height="270" alt="Neochic Mediasolutions" border="0"/></a>
-<ul id="navigation">
-    <li><a href="/#Referenzen">Referenzen</a></li>
-    <li><a href="/#Leistungen">Leistungen</a></li>
-    <li><a href="#Kontakt">Kontakt</a></li>
-</ul>
-<div id="frame">
-    <div data-name="sectionMainStart" id="Home" class="section start"><h1>Kreatives <strong>Design</strong> & starke <strong>Technik</strong>.</h1>
-<span class="more">Werfen Sie einen Blick auf unsere Projekte.</span></div><div data-name="sectionnFrames" id="Referenzen" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="nframes_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/nframes_00.jpg?1615367015" alt="nFrames -Empowering Photogrammetry" title="nFrames -Empowering Photogrammetry"></noscript><div class="description"><h2>nFrames</h2><ul><li class="concept">Konzeption</li><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="nframes_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/nframes_01.jpg?1615367015" alt="Der animierter Header wurde mit WebGL umgesetzt." title="Eine 3D-Animation empfängt den User auf der Startseite."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="nframes_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/nframes_02.jpg?1615367015" alt="Das neue Corporate Design wurde auf zwei Produktmarken übertragen und erweitert." title="Moderne Logogestaltung"></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="nframes_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/nframes_03.jpg?1615367015" alt="Die Webseite ist auf allen Endgeräten vollständig bedienbar." title="Responives Design in WordPress"></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="nframes_04.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/nframes_04.jpg?1615367015" alt="Komplexe Formular sind mit WordPress pflegbar." title="Modulares pflegbares WordPress Layout"></noscript></div><div class="page url"><a href="http://www.nframes.com" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionFolit" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_00.jpg?1615367015" alt="" title=""></noscript><div class="description"><h2>Folit</h2><ul><li class="concept">Konzeption</li><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_01.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_02.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_03.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_04.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_04.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="folit_05.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/folit_05.jpg?1615367015" alt="" title=""></noscript></div><div class="page url"><a href="http://www.folit.de/" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionSchallon" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schallon_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schallon_00.jpg?1615367015" alt="" title=""></noscript><div class="description"><h2>Roman<br/>Schallon</h2><ul><li class="concept">Konzeption</li><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schallon_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schallon_01.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schallon_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schallon_02.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schallon_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schallon_03.jpg?1615367015" alt="" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schallon_04.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schallon_04.jpg?1615367015" alt="" title=""></noscript></div><div class="page url"><a href="http://www.romanschallon.de/" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionGlarify" id="Referenzen" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="glarify_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/glarify_00.jpg?1615367015" alt="Glarify - Die location-basierte online Plattform für Kunst" title="Neochic entwickelte die Web-Applikation für Glarify"></noscript><div class="description"><h2>Glarify<br/>Kunst-<br />plattform</h2><ul><li class="concept">Konzeption</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="glarify_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/glarify_01.jpg?1615367015" alt="Globale Art Map" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="glarify_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/glarify_02.jpg?1615367015" alt="Dynamische Ergebnisliste" title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="glarify_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/glarify_03.jpg?1615367015" alt="Kunst-Portal" title=""></noscript></div><div class="page url"><a href="http://www.glarify.de" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionPraeMedicon" id="Referenzen" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="praemedicon_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/praemedicon_00.jpg?1615367015" alt="PraeMedicon - Haltungs- und Bewegungsanalyse" title="PraeMedicon - Haltungs- und Bewegungsanalyse"></noscript><div class="description"><h2>PraeMedicon</h2><ul><li class="concept">Konzeption</li><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="praemedicon_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/praemedicon_01.jpg?1615367015" alt="Ein speziell für den Kunden abgestimmtes Layout mit WordPress umgesetzt." title="Modulares pflegbares WordPress Layout"></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="praemedicon_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/praemedicon_02.jpg?1615367015" alt="Umfangreiche Tabelle in WordPress einfach zu erfassen." title="Komplexe und responsive Tabellen in WordPress pflegbar"></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="praemedicon_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/praemedicon_03.jpg?1615367015" alt="Schnelle Kontaktaufnahme mit Hilfe von google Maps." title="Modernes Wordpress Layout"></noscript></div><div class="page url"><a href="http://www.praemedicon.de" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionRobos" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="robos_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/robos_00.jpg?1615367015" alt="Webdesign und technische Umsetzung der Corporate Website für den Etikettenhersteller Robos GmbH aus Kornwestheim." title="Internetseite für Robos erstellt."></noscript><div class="description"><h2>Robos<br />Etiketten</h2><ul><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="robos_1.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/robos_1.jpg?1615367015" alt="Umsetzung der modernen Internetseite der Robos GmbH." title="Modernes Design und sichere Technik beim Webauftritt der Robos GmbH."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="robos_2.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/robos_2.jpg?1615367015" alt="Dynamische Contentpflege perfekt umgesetzt." title="Inhalte einfach pflegbar."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="robos_3.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/robos_3.jpg?1615367015" alt="Durch markante Farben wird der User durch die Internetseite geführt." title="Ansprechendes Userinterface."></noscript></div><div class="page url"><a href="http://www.robos.de" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionDOSONI" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="dosoni_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/dosoni_00.jpg?1615367015" alt="Responsives Webdesign für DOSONI Veranstaltungstechnik." title="Den Webauftritt für jedes Ausgabegerät optimiert."></noscript><div class="description"><h2>DOSONI-VT</h2><ul><li class="concept">Konzeption</li><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="dosoni_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/dosoni_01.jpg?1615367015" alt="Modernes Webdesign für DOSONI Veranstaltungstechnik." title="Der neue Markenauftritt von DOSONI Veranstaltungstechnik."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="dosoni_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/dosoni_02.jpg?1615367015" alt="Die Internetseite passt sich dynamisch an die Auflösung an." title="Die Homepage für Tablets optimiert."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="dosoni_03.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/dosoni_03.jpg?1615367015" alt="Übersichtliches Userinterface." title="Responsives Design für Corporate Webseiten."></noscript></div><div class="page url"><a href="http://www.dosoni-vt.de" class="noPageAction" target="_blank">Webseite <strong>ansehen</strong></a></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionUSM" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="usm_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/usm_00.jpg?1615367015" alt="Landingpage für USM Möbelbausysteme erstellt." title="Flexibel und schnelle Umsetzung einer Landingpage für USM Möbelbausysteme."></noscript><div class="description"><h2>USM<br />Möbelbau-<br />systeme</h2><ul><li class="design">Gestaltung</li><li class="dev">Technik</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="usm_3.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/usm_3.jpg?1615367015" alt="Printdesign und Bildbearbeitung" title="Einladungskarte gestaltet"></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="usm_1.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/usm_1.jpg?1615367015" alt="Landingpage mobil angepasst." title="Responsives Layout für eine Landingpage."></noscript></div><ul class="bullets"><li>1</li><li>2</li><li>3</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionFotografie" class="section pages"><div class="page first active"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="foto_00.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/foto_00.jpg?1615367015" alt="Fotografie im eigenen Fotostudio auf höchstem Niveau." title="Bildbearbeitung und Bildretusche für individuelle Wünsche."></noscript><div class="description"><h2>Professionelle<br/>Fotografie</h2><ul><li class="photo">Fotografie</li></ul></div></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="foto_01.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/foto_01.jpg?1615367015" alt="Portraitshooting on Location." title="Fotografiert mit Tageslicht in Stuttgart-Zuffenhausen."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="salzwasseretiketten.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/salzwasseretiketten.jpg?1615367015" alt="." title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="torben_ahls.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/torben_ahls.jpg?1615367015" alt="." title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="iss_was_gruenes.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/iss_was_gruenes.jpg?1615367015" alt="." title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="schoeck.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/schoeck.jpg?1615367015" alt="." title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="foto_02.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/foto_02.jpg?1615367015" alt="Portraitfotografie - Frau im Studio mit Tageslichtlampen in Szene gesetzt." title="Professionelle Fotonachbearbeitung mit Photoshop."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="stefan_biermann.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/stefan_biermann.jpg?1615367015" alt="." title=""></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="foto_06.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/foto_06.jpg?1615367015" alt="Unternehmensfotografie - Moderne Mitarbeiterfotos für Ihr Unternehmen" title="Umsetzung von kreativen und modernen Lösungen zur Unternehmensfotografie."></noscript></div><div class="page default"><img class="background" width="1920" height="1200" src="/img/bg_shine.jpg" data-path="/img/references/" data-name="foto_07.jpg?1615367015">
-<noscript><img width="1920" height="1200" class="background noscript" src="/img/references/foto_07.jpg?1615367015" alt="Stimmungsvolle Produktfotografie für einen Onlineshop mit Magentosoftware umgesetzt." title="Makrofotografie zur Darstellung hochwertiger Produkte."></noscript></div><ul class="bullets"><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li></ul>
-<span class="back">Zurück zur<br /><strong>Übersicht</strong></span></div><div data-name="sectionMainServices" id="Leistungen" data-offset="-69" class="section services"><h2>Was können wir <strong>für Sie</strong> tun?</h2>
-<div class="boxes">
-    <div class="concept">
-        <h3>Beratung und Konzeption</h3>
-        <p>
-            Eine gute Beratung ist der erste Schritt für ein erfolgreiches Projekt.
-            Wir legen großen Wert darauf, Kundenwünschen nicht nur blind zu folgen, sondern gemeinsam ein optimales Ergebnis zu erarbeiten.</p><p>
-            Bei allen Projekten haben wir den Anspruch, dass Sie ihre Ziele erreichen und sich als Kunde mit dem Ergebnis identifizieren können.
-        </p>
-    </div><div class="design">
-        <h3>Design</h3>
-        <p>
-            Das Design moderner Webseiten, Microsites und Web&shy;applikationen geht weit über rein ästhetische Gesichts&shy;punkte hinaus.
-            Daher werden bei uns alle Projekte von Anfang an von Konzeptern, Gestaltern und Entwicklern in enger Zusammen&shy;arbeit entworfen.</p><p>
-            Neben Design für das Web, erstellen wir responsive Newsletter, PowerPoint-Folien und umfangreiche Corporate Designs.
-        </p>
-    </div><div class="dev">
-        <h3>Entwicklung</h3>
-        <p>
-            Die Technik kommt im kreativen Bereich oft zu kurz. Dabei ist sie einer der wichtigsten Faktoren für ein gutes Ergebnis.
-            Daher sind wir Stolz darauf, Technik zu unseren größten Stärken zählen zu können.</p><p>
-            Wir nutzen die neusten Technologien und setzten auf agile Entwicklungsprozesse für effiziente Arbeitsabläufe.
-        </p>
-    </div><div class="photo">
-        <h3>Fotografie & Video</h3>
-        <p>
-            Für Webseiten und das Online-Marketing sind gute Fotos und Videos unerlässlich.</p><p>
-            Wir produzieren direkt auch auf ausgefallene Konzepte zugeschnittenes Material und erwecken sie so zum Leben.
-            Damit sich Ihr Inhalt von dem der Mitbewerber abhebt nutzen wir all unsere Kreativität und Leidenschaft.
-        </p>
+<body id="start">
+    <a href="kontakt.html" class="contact-sticky">
+    Kontakt
+</a>
+
+<div class="main-content">
+      <section class="default-header neo-section">
+        <div class="main-header">
+        <a href="/"><img class="company-icon"
+                         src="/assets/neochic.svg"
+                         width="234"
+                         height="50"
+                         alt="Neochic Logo"
+                         fetchpriority="high"
+                         loading="eager"
+        /></a>
+        <span role="button" tabindex="0" class="nav-toggle" title="Menü"></span>
+    
+        <div class="burger-menu">
+      <div class="neo-section">
+        <div class="menu-header">
+          <a href="/" class="logo"><img class="company-icon inverted" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+          <span role="button" tabindex="0" class="menu-cancel" title="Schließen"></span>
+        </div>
+    
+        <ul class="menu-list">
+          <li class="menu-list-item">
+            <a class="menu-link" href="/ueber-uns.html">Über Uns</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/leistungen.html">Leistungen</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/karriere.html">Karriere</a>
+          </li>
+          <li class="menu-list-item">
+            <a class="menu-link" href="/kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div></div>
+    
     </div>
-</div></div><div data-name="sectionMainContact" id="Kontakt" data-offset="-70" class="section contact"><img class="logo" src="/img/logo.png?1615367015" width="160" height="270" alt="Neochic Mediasolutions" />
-<h1>Treten Sie mit uns in <strong>Kontakt</strong>.</h1>
-<h2>Neochic GmbH</h2>
-
-<p>
-Hofener Weg 11 · 71686 Remseck am Neckar<br />
-07146 / 537 99 35 · <a href="mailto:info@neochic.de">info@neochic.de</a>
-</p>
-
-<ul class="social">
-    <li class="facebook"><a title="facebook" href="https://www.facebook.com/NeochicGmbH" target="_blank">Folge uns auf <strong>facebook</strong></a></li>
-    <li class="youtube"><a href="http://www.youtube.com/user/Neochiceria" target="_blank"  title="YouTube">Endeckte uns auf <strong>YouTube</strong></a></li>
-    <li class="xing"><a href="https://www.xing.com/companies/neochicgmbh" target="_blank" title="xing">Besuche uns auf<strong>xing</strong></a></li>
-</ul>
-
-<div id="footer">
-    <ul>
-        <li><a href="#imprint">Impressum</a></li>
-        <li><a href="#gtc">AGB</a></li>
-        <li><a href="#privacy">Datenschutzbestimmungen</a></li>
-    </ul>
-    <a class="top" href="#Home">nach oben</a>
+    
+        <div class="page-title">
+            <div class="title-wrapper">
+                <div class="main-title">
+                          <h1 class="">
+                Eine gute Beratung ist der erste Schritt für ein erfolgreiches Projekt.      </h1>
+        
+                </div>
+        
+                    <div class="sub-title">
+                        Wir legen großen Wert darauf aktiv Lösungen im Team zu gestalten. Daher unterstützen wir Ihre Teams, um gemeinsam ein optimales Ergebnis zu erzielen.
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section dark remove-padding-top">
+        <div class="intro ">
+          <div class="intro-header">
+            <picture class="image">
+                <source srcset="
+                                /assets/intro/3640/infrastructure-meeting.avif 3640w,
+                                /assets/intro/2730/infrastructure-meeting.avif 2730w,
+                                /assets/intro/2360/infrastructure-meeting.avif 2360w,
+                                /assets/intro/1820/infrastructure-meeting.avif 1820w,
+                                /assets/intro/1536/infrastructure-meeting.avif 1536w,
+                                /assets/intro/1180/infrastructure-meeting.avif 1180w,
+                                /assets/intro/1024/infrastructure-meeting.avif 1024w,
+                                /assets/intro/960/infrastructure-meeting.avif 960w,
+                                /assets/intro/750/infrastructure-meeting.avif 750w,
+                                /assets/intro/640/infrastructure-meeting.avif 640w,
+                                /assets/intro/320/infrastructure-meeting.avif 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <source srcset="
+                                /assets/intro/3640/infrastructure-meeting.webp 3640w,
+                                /assets/intro/2730/infrastructure-meeting.webp 2730w,
+                                /assets/intro/2360/infrastructure-meeting.webp 2360w,
+                                /assets/intro/1820/infrastructure-meeting.webp 1820w,
+                                /assets/intro/1536/infrastructure-meeting.webp 1536w,
+                                /assets/intro/1180/infrastructure-meeting.webp 1180w,
+                                /assets/intro/1024/infrastructure-meeting.webp 1024w,
+                                /assets/intro/960/infrastructure-meeting.webp 960w,
+                                /assets/intro/750/infrastructure-meeting.webp 750w,
+                                /assets/intro/640/infrastructure-meeting.webp 640w,
+                                /assets/intro/320/infrastructure-meeting.webp 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <img src="assets/intro/1820/infrastructure-meeting.webp"
+                     alt="infrastructure-meeting" loading="eager" fetchpriority="high">
+            </picture>
+        
+              <div class="caption">
+                    <h2 class="inverted">
+              Intelligent, Intuitiv, Gemeinsam    </h2>
+        
+                <a href="ueber-uns.html#arbeitsweise" class="call-to-action ">
+                    >> Unsere Arbeitsweise
+                </a>
+              </div>
+          </div>
+          <div class="intro-content">
+            <div class="texty-content">
+                <div class="yellowy-headline
+                            
+                            
+                            underline">
+                    <h2 class="inverted no-wrap">
+                              <span>
+                                  Unterstützung für
+                              </span>
+                              <span>
+                                Ihr IT-Projekt
+                              </span>
+                    </h2>
+                </div>
+              <div class="texty-wrapper">
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Gemeinsam Software entwicklen  </h3>
+                
+                              <p>
+                                  Wenn zusätzliche Entwickler benötigt werden, um kurzzeitig
+                                  die Kapazitäten zu erhöhen oder sie zusätzliches Wissen
+                                  im Team benötigen, helfen wir gerne weiter.
+                              </p>
+                </div>
+                <div class="texty-content-item">
+                        <h3 class="inverted">
+                    Trainings und Beratung  </h3>
+                
+                              <p>
+                                  Werden Workflows oder Technologien umgestellt kann es
+                                  helfen die Teams zu schulen und auf externe Expertise
+                                  zurückzugreifen. Auch wenn bestehende Software auf
+                                  Optimierungspotential überprüft werden soll, können
+                                  wir behilflich sein.
+                              </p>
+                </div>
+              </div>
+                      <a href="leistungen.html#leistungen" class="call-to-action ">
+                          >> Zu den Leistungen
+                      </a>
+            
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <section class="content-section narrow">
+            <div class="picturey-content">
+                <div class="picturey-content-items">
+                    <div class="picturey-content-text-item">
+                        <div class="yellowy-headline
+                                    
+                                    
+                                    underline">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          Bleiben Sie
+                                      </span>
+                                      <span>
+                                        unabhängig
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description">
+                                     <p>
+                                         Bei externen Entwicklern besteht die Gefahr, dass man in
+                                         Abhängigkeit dieser gerät. Dies geschieht insbesondere
+                                         dann, wenn Wissen exklusiv beim Dienstleister liegt.<br />
+                                         Wird z.B. ein ganzes Team von einem externen Dienstleister
+                                         gestellt, ist es äußerst schwierig den Dienstleister ohne
+                                         komplette Neuentwicklung zu wechseln.
+                                     </p>
+                                     <p>
+                                         Um dies von vornherein auszuschließen setzen wir darauf,
+                                         immer mit internen Entwicklern direkt zusammenzuarbeiten
+                                         und nie ganze Teams langfristig zu stellen. Außerdem
+                                         wechseln wir unsere Entwickler regelmäßig aus, damit
+                                         sich bei einzelnen unserer Entwicklern nicht über
+                                         viele Jahre hinweg exklusives Wissen ansammeln kann.<br />
+                                         Damit dies optimal funktioniert setzen wir auf
+                                         einen starken Wissenstransfer hin zum Kunden, damit
+                                         kein Wissen verloren geht.
+                                     </p>
+                                     <p>
+                                         Auf diese Weise können wir sichergehen, dass wenn Sie uns
+                                         weiter buchen, Sie die Qualität schätzen und nicht nur
+                                         keine andere Möglichkeit haben.
+                                     </p>
+                        </div>
+                    </div>
+                    <div class="picturey-content-image-item">
+                        <picture class="content-image">
+                            <source srcset="
+                                                /assets/content/1950/christoph-stickel-zeichnet-microfrontend-diagramm.avif 1950w,
+                                                /assets/content/1930/christoph-stickel-zeichnet-microfrontend-diagramm.avif 1930w,
+                                                /assets/content/1734/christoph-stickel-zeichnet-microfrontend-diagramm.avif 1734w,
+                                                /assets/content/1300/christoph-stickel-zeichnet-microfrontend-diagramm.avif 1300w,
+                                                /assets/content/965/christoph-stickel-zeichnet-microfrontend-diagramm.avif 965w,
+                                                /assets/content/867/christoph-stickel-zeichnet-microfrontend-diagramm.avif 867w,
+                                                /assets/content/700/christoph-stickel-zeichnet-microfrontend-diagramm.avif 700w,
+                                                /assets/content/650/christoph-stickel-zeichnet-microfrontend-diagramm.avif 650w,
+                                                /assets/content/560/christoph-stickel-zeichnet-microfrontend-diagramm.avif 560w,
+                                                /assets/content/440/christoph-stickel-zeichnet-microfrontend-diagramm.avif 440w,
+                                                /assets/content/350/christoph-stickel-zeichnet-microfrontend-diagramm.avif 350w,
+                                                /assets/content/335/christoph-stickel-zeichnet-microfrontend-diagramm.avif 335w,
+                                                /assets/content/280/christoph-stickel-zeichnet-microfrontend-diagramm.avif 280w
+                                            "
+                                        sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                    >
+                            <source srcset="
+                                                /assets/content/1950/christoph-stickel-zeichnet-microfrontend-diagramm.webp 1950w,
+                                                /assets/content/1930/christoph-stickel-zeichnet-microfrontend-diagramm.webp 1930w,
+                                                /assets/content/1734/christoph-stickel-zeichnet-microfrontend-diagramm.webp 1734w,
+                                                /assets/content/1300/christoph-stickel-zeichnet-microfrontend-diagramm.webp 1300w,
+                                                /assets/content/965/christoph-stickel-zeichnet-microfrontend-diagramm.webp 965w,
+                                                /assets/content/867/christoph-stickel-zeichnet-microfrontend-diagramm.webp 867w,
+                                                /assets/content/700/christoph-stickel-zeichnet-microfrontend-diagramm.webp 700w,
+                                                /assets/content/650/christoph-stickel-zeichnet-microfrontend-diagramm.webp 650w,
+                                                /assets/content/560/christoph-stickel-zeichnet-microfrontend-diagramm.webp 560w,
+                                                /assets/content/440/christoph-stickel-zeichnet-microfrontend-diagramm.webp 440w,
+                                                /assets/content/350/christoph-stickel-zeichnet-microfrontend-diagramm.webp 350w,
+                                                /assets/content/335/christoph-stickel-zeichnet-microfrontend-diagramm.webp 335w,
+                                                /assets/content/280/christoph-stickel-zeichnet-microfrontend-diagramm.webp 280w
+                                            "
+                                    sizes="(min-width: 1450px) 650px, (min-width: 1100px) calc((100vw - 150px) / 2), (min-width: 600px) calc(100vw - 100px), calc(100vw - 40px)"
+                                >
+                                <img src="assets/content/650/christoph-stickel-zeichnet-microfrontend-diagramm.webp"
+                                 alt="christoph-stickel-zeichnet-microfrontend-diagramm" loading="lazy"
+                                width="650"
+                                height="433"
+                                >
+                        </picture>
+                        <div class="yellowy-headline
+                                    pull-above
+                                    pull-right
+                                    ">
+                            <h2 class=" no-wrap">
+                                      <span>
+                                          Von der Vision
+                                      </span>
+                                      <span>
+                                        zum Produkt
+                                      </span>
+                            </h2>
+                        </div>
+                        <div class="description pull-right">
+                                      <p>
+                                          Wir wollen Ihre Vision verstehen. Nur so können
+                                          wir helfen diese weiterzuentwickeln und sie schnell
+                                          und effektiv in ein qualitativ hochwertiges Produkt
+                                          zu verwandeln.
+                                      </p>
+                            <div class="call-to-action-wrapper">
+                                <a href="leistungen.html#das-bieten-wir" class="call-to-action ">
+                                    >> Das bieten wir
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+      
+      <section class="content-section">
+              <div class="references">
+                  <h2 class="">
+                Zufriedene Kunden    </h2>
+          
+                <div class="logos">
+                  <div>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-autoscout24.avif 750w,
+                                              /assets/kunden/600/logo-autoscout24.avif 600w,
+                                              /assets/kunden/500/logo-autoscout24.avif 500w,
+                                              /assets/kunden/400/logo-autoscout24.avif 400w,
+                                              /assets/kunden/250/logo-autoscout24.avif 250w,
+                                              /assets/kunden/200/logo-autoscout24.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-autoscout24.webp 750w,
+                                              /assets/kunden/600/logo-autoscout24.webp 600w,
+                                              /assets/kunden/500/logo-autoscout24.webp 500w,
+                                              /assets/kunden/400/logo-autoscout24.webp 400w,
+                                              /assets/kunden/250/logo-autoscout24.webp 250w,
+                                              /assets/kunden/200/logo-autoscout24.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-autoscout24.webp"
+                                   alt="logo-autoscout24" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-handelsblatt.avif 750w,
+                                              /assets/kunden/600/logo-handelsblatt.avif 600w,
+                                              /assets/kunden/500/logo-handelsblatt.avif 500w,
+                                              /assets/kunden/400/logo-handelsblatt.avif 400w,
+                                              /assets/kunden/250/logo-handelsblatt.avif 250w,
+                                              /assets/kunden/200/logo-handelsblatt.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-handelsblatt.webp 750w,
+                                              /assets/kunden/600/logo-handelsblatt.webp 600w,
+                                              /assets/kunden/500/logo-handelsblatt.webp 500w,
+                                              /assets/kunden/400/logo-handelsblatt.webp 400w,
+                                              /assets/kunden/250/logo-handelsblatt.webp 250w,
+                                              /assets/kunden/200/logo-handelsblatt.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-handelsblatt.webp"
+                                   alt="logo-handelsblatt" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-usm.avif 750w,
+                                              /assets/kunden/600/logo-usm.avif 600w,
+                                              /assets/kunden/500/logo-usm.avif 500w,
+                                              /assets/kunden/400/logo-usm.avif 400w,
+                                              /assets/kunden/250/logo-usm.avif 250w,
+                                              /assets/kunden/200/logo-usm.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-usm.webp 750w,
+                                              /assets/kunden/600/logo-usm.webp 600w,
+                                              /assets/kunden/500/logo-usm.webp 500w,
+                                              /assets/kunden/400/logo-usm.webp 400w,
+                                              /assets/kunden/250/logo-usm.webp 250w,
+                                              /assets/kunden/200/logo-usm.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-usm.webp"
+                                   alt="logo-usm" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-roman-schallon.avif 750w,
+                                              /assets/kunden/600/logo-roman-schallon.avif 600w,
+                                              /assets/kunden/500/logo-roman-schallon.avif 500w,
+                                              /assets/kunden/400/logo-roman-schallon.avif 400w,
+                                              /assets/kunden/250/logo-roman-schallon.avif 250w,
+                                              /assets/kunden/200/logo-roman-schallon.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-roman-schallon.webp 750w,
+                                              /assets/kunden/600/logo-roman-schallon.webp 600w,
+                                              /assets/kunden/500/logo-roman-schallon.webp 500w,
+                                              /assets/kunden/400/logo-roman-schallon.webp 400w,
+                                              /assets/kunden/250/logo-roman-schallon.webp 250w,
+                                              /assets/kunden/200/logo-roman-schallon.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-roman-schallon.webp"
+                                   alt="logo-roman-schallon" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                  </div>
+                  <div>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-nframes.avif 750w,
+                                              /assets/kunden/600/logo-nframes.avif 600w,
+                                              /assets/kunden/500/logo-nframes.avif 500w,
+                                              /assets/kunden/400/logo-nframes.avif 400w,
+                                              /assets/kunden/250/logo-nframes.avif 250w,
+                                              /assets/kunden/200/logo-nframes.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-nframes.webp 750w,
+                                              /assets/kunden/600/logo-nframes.webp 600w,
+                                              /assets/kunden/500/logo-nframes.webp 500w,
+                                              /assets/kunden/400/logo-nframes.webp 400w,
+                                              /assets/kunden/250/logo-nframes.webp 250w,
+                                              /assets/kunden/200/logo-nframes.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-nframes.webp"
+                                   alt="logo-nframes" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-gbqm.avif 750w,
+                                              /assets/kunden/600/logo-gbqm.avif 600w,
+                                              /assets/kunden/500/logo-gbqm.avif 500w,
+                                              /assets/kunden/400/logo-gbqm.avif 400w,
+                                              /assets/kunden/250/logo-gbqm.avif 250w,
+                                              /assets/kunden/200/logo-gbqm.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-gbqm.webp 750w,
+                                              /assets/kunden/600/logo-gbqm.webp 600w,
+                                              /assets/kunden/500/logo-gbqm.webp 500w,
+                                              /assets/kunden/400/logo-gbqm.webp 400w,
+                                              /assets/kunden/250/logo-gbqm.webp 250w,
+                                              /assets/kunden/200/logo-gbqm.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-gbqm.webp"
+                                   alt="logo-gbqm" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-praemedicon.avif 750w,
+                                              /assets/kunden/600/logo-praemedicon.avif 600w,
+                                              /assets/kunden/500/logo-praemedicon.avif 500w,
+                                              /assets/kunden/400/logo-praemedicon.avif 400w,
+                                              /assets/kunden/250/logo-praemedicon.avif 250w,
+                                              /assets/kunden/200/logo-praemedicon.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-praemedicon.webp 750w,
+                                              /assets/kunden/600/logo-praemedicon.webp 600w,
+                                              /assets/kunden/500/logo-praemedicon.webp 500w,
+                                              /assets/kunden/400/logo-praemedicon.webp 400w,
+                                              /assets/kunden/250/logo-praemedicon.webp 250w,
+                                              /assets/kunden/200/logo-praemedicon.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-praemedicon.webp"
+                                   alt="logo-praemedicon" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                          <picture class="content-image">
+                              <source srcset="
+                                              /assets/kunden/750/logo-folit.avif 750w,
+                                              /assets/kunden/600/logo-folit.avif 600w,
+                                              /assets/kunden/500/logo-folit.avif 500w,
+                                              /assets/kunden/400/logo-folit.avif 400w,
+                                              /assets/kunden/250/logo-folit.avif 250w,
+                                              /assets/kunden/200/logo-folit.avif 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <source srcset="
+                                              /assets/kunden/750/logo-folit.webp 750w,
+                                              /assets/kunden/600/logo-folit.webp 600w,
+                                              /assets/kunden/500/logo-folit.webp 500w,
+                                              /assets/kunden/400/logo-folit.webp 400w,
+                                              /assets/kunden/250/logo-folit.webp 250w,
+                                              /assets/kunden/200/logo-folit.webp 200w
+                                          "
+                                      sizes="(min-width: 1300px) 250px, (min-width: 1100px) 200px, (min-width: 700px) 250px, 200px">
+                              <img src="assets/content/250/logo-folit.webp"
+                                   alt="logo-folit" loading="lazy"
+                                  width="250"
+                                  height="83">
+                          </picture>
+                  </div>
+                </div>
+              </div>
+      </section>
+    
+    <section class="content-section dark remove-padding-top">
+        <div class="intro ">
+          <div class="intro-header">
+            <picture class="image">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-auf-dem-sofa.avif 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <source srcset="
+                                /assets/intro/3640/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 3640w,
+                                /assets/intro/2730/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 2730w,
+                                /assets/intro/2360/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 2360w,
+                                /assets/intro/1820/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 1820w,
+                                /assets/intro/1536/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 1536w,
+                                /assets/intro/1180/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 1180w,
+                                /assets/intro/1024/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 1024w,
+                                /assets/intro/960/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 960w,
+                                /assets/intro/750/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 750w,
+                                /assets/intro/640/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 640w,
+                                /assets/intro/320/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp 320w
+                            "
+                        sizes="(min-width: 1920px) 1820px, (min-width: 600px) calc(100vw - 100px), 100vw">
+                <img src="assets/intro/1820/christoph-stickel-und-oemer-almali-auf-dem-sofa.webp"
+                     alt="christoph-stickel-und-oemer-almali-auf-dem-sofa" loading="lazy">
+            </picture>
+        
+          </div>
+          <div class="intro-content">
+            <div class="texty-content">
+                <div class="yellowy-headline
+                            
+                            
+                            underline">
+                    <h2 class="inverted no-wrap">
+                              <span>
+                                  Werde Teil des
+                              </span>
+                              <span>
+                                Neochic Teams
+                              </span>
+                    </h2>
+                </div>
+              <div class="texty-wrapper">
+                <div class="texty-content-item">
+                                <p>
+                                    Wir suchen immer nach talentierten Entwicklern und
+                                    IT-Beratern. Dabei setzen wir auf Vielfältigkeit
+                                    und gegenseitige Unterstützung.<br />
+                                    Nachhaltigkeit steht bei uns nicht nur ökologisch,
+                                    sondern in jedem Aspekt des Arbeitsumfelds und
+                                    Life-Styles im Vordergrund.
+                                </p>
+                                <p>
+                                    Hast du Lust mehr zu erfahren? Dann schau dir
+                                    unsere offenen Stellen an, bewirb dich initiativ
+                                    oder trete einfach so mit uns in Kontakt.
+                                </p>
+                </div>
+              </div>
+                      <a href="karriere.html#offene-stellen" class="call-to-action ">
+                          >> Offene Stellen
+                      </a>
+            
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="neo-section quote">
+      <blockquote>
+                Die Neochic GmbH hat uns bei der agilen Transformation unterstützt und die Effektivität unseres Teams, auf das nächste Level gehoben.
+      </blockquote>
+      <div class="quote-info">
+        <strong>Oliver Krehnke</strong>
+        <span class="position">Product Owner Handelsblatt.com</span>
+      </div>
+    </section>
 </div>
-</div><div data-name="sectionMainImprint" class="section imprint"><h2 id="imprint" data-offset="-69">Impressum</h2>
-<h4>Neochic GmbH</h4>
-<p>
-    Hofener Weg 11<br />
-    71686 Remseck am Neckar<br />
-    Telefon: 07146 / 537 99 35<br />
-    E-Mail: <a href="mailto:info@neochic.de">info@neochic.de</a>
-</p>
-<h4>Vertreten durch:</h4>
-<p>
-    Philipp Stickel<br />
-    Christoph Stickel<br />
-    <br />
-    Registergericht: Amtsgericht Stuttgart<br />
-    Registernummer: HRB 756721<br />
-    USt-IdNr. : DE305988781
-</p>
-<h3 id="gtc" data-offset="-130">Allgemeine Vertragsbedingungen</h3>
-<p>
-    Allgemeine Geschäftsbedingungen: <a href="/downloads/AV_Bitkom_20160629.pdf" target="_blank">AV Bitkom</a><br />
-    Vertragsbedingungen für Dienstleistungen: <a href="/downloads/DL_Bitkom_20160629.pdf" target="_blank">DL Bitkom</a><br />
-    Vertragsbedingungen für Werkverträge: <a href="/downloads/WV_Bitkom_20160629.pdf" target="_blank">WV Bitkom</a>
-</p>
-<h3 id="privacy" data-offset="-130">Datenschutzbestimmungen</h3>
-<p>
-    Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc.
-    („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und
-    die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über
-    Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort
-    gespeichert. Im Falle der Aktivierung der IP-Anonymisierung auf dieser Webseite, wird Ihre IP-Adresse von Google
-    jedoch innerhalb von Mitgliedstaaten der Europäischen Union oder in anderen Vertragsstaaten des Abkommens über den
-    Europäischen Wirtschaftsraum zuvor gekürzt. Nur in Ausnahmefällen wird die volle IP-Adresse an einen Server von
-    Google in den USA übertragen und dort gekürzt. Die IP-Anonymisierung ist auf dieser Website aktiv. Im Auftrag des
-    Betreibers dieser Website wird Google diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um
-    Reports über die Websiteaktivitäten zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung
-    verbundene Dienstleistungen gegenüber dem Websitebetreiber zu erbringen. Die im Rahmen von Google Analytics von
-    Ihrem Browser übermittelte IP-Adresse wird nicht mit anderen Daten von Google zusammengeführt. Sie können die
-    Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; wir weisen Sie
-    jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich
-    werden nutzen können. Sie können darüber hinaus die Erfassung der durch das Cookie erzeugten und auf Ihre Nutzung
-    der Website bezogenen Daten (inkl. Ihrer IP-Adresse) an Google sowie die Verarbeitung dieser Daten durch Google
-    verhindern, indem sie das unter dem folgenden Link verfügbare Browser-Plugin herunterladen und installieren: <a href="http://tools.google.com/dlpage/gaoptout?hl=de" target="_blank">http://tools.google.com/dlpage/gaoptout?hl=de</a>.
-</p>
-<h3>Bildnachweise</h3>
-<p>
-Startbild Sasha Vujinovic:<br />
-<a href="http://www.flickr.com/photos/querpass/5745340213/in/set-72157625133749857" target="_blank">http://www.flickr.com/photos/querpass/5745340213/in/set-72157625133749857</a> © Inside Handball
-</p>
-</div></div>
-<!-- actual page content end -->
-    <script src="/js/main-build.js?1615367015"></script>
+<section class="neo-section footer">
+  <a href="/"><img class="company-logo" src="/assets/neochic.svg" width="234" height="50" alt="Neochic Logo" /></a>
+  <div class="links-container">
+    <div class="link-column">
+      <a class="footer-link" href="ueber-uns.html#start">Über Uns</a>
+      <a class="footer-link" href="ueber-uns.html#arbeitsweise">So erzielen wir die besten Ergebnisse</a>
+      <a class="footer-link" href="ueber-uns.html#unsere-geschichte">Wir haben eine Geschichte</a>
+      <a class="footer-link" href="ueber-uns.html#geschaeftsfuehrung">Geschäftsführung</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="leistungen.html#start">Leistungen</a>
+      <a class="footer-link" href="leistungen.html#leistungen">Unsere Leistungen</a>
+      <a class="footer-link" href="leistungen.html#das-bieten-wir">Was können wir für Sie tun?</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="karriere.html#start">Karriere</a>
+      <a class="footer-link" href="karriere.html#ein-einzigartiges-team">Arbeite in einem einzigartigen Team</a>
+      <a class="footer-link" href="karriere.html#offene-stellen">Wir suchen</a>
+      <a class="footer-link" href="karriere.html#kultur-bei-neochic">Kultur bei Neochic</a>
+    </div>
+    <div class="link-column">
+      <a class="footer-link" href="kontakt.html#start">Kontakt</a>
+      <p>
+          Neochic GmbH<br />
+          Hofener Weg 11<br />
+          71686 Remseck am Neckar
+      </p>
+      <p>
+          +49 7146 537 99 35<br />
+          <a href="mailto:info@neochic.de">info@neochic.de</a>
+      </p>
+      <a class="footer-link footer-imprint" href="impressum.html#start">Impressum / AGB</a>
+    </div>
+  </div>
+  <span class="legal">© Neochic GmbH 2022</span>
+</section>
+
+<script src="main.js" defer></script>
 </body>
 </html>
